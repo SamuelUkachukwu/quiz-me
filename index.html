@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <div>
+    <header id="header">
+        <div id="logo-box">
             <a href="index.html">
-                <img src="assets/images/logo.png" alt="">
+                <img id="logo" src="assets/images/logo.png" alt="">
             </a>
         </div>
-        <div>
-            <h1>Quiz Me!</h1>
+        <div id="hero-title">
+            <h1 id="title">Quiz Me!</h1>
         </div>
     </header>
-    <section class="container">
+    <section class="quiz-container">
         <div class="card">
             <div class="card-back">
                 <p>question field area </p>
@@ -28,6 +29,8 @@
                 <p>story section area</p>
             </div>
         </div>
+    </section>
+    <div class="choice-box">
         <form action="">
             <input type="radio" id="choice-a" name="answer" value="a">
               <label for="choice-a">A</label><br>
@@ -36,14 +39,11 @@
             <input type="radio" id="choice-c" name="answer" value="c">
               <label for="choice-c">C</label><br>
         </form>
-
-    </section>
-
-
-    <div>
-        <p>Score: <span>0</span></p>
+        <div>
+            <p>Score: <span>0</span></p>
+        </div>
     </div>
-    <div></div>
+   
 </body>
 
 </html>
