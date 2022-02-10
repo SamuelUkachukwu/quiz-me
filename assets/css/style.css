@@ -131,12 +131,32 @@ body {
 }
 
 form {
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
 }
-
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.social-menu{
+    display: flex;
+    list-style: none;
+}
+.social-menu li a{
+    font-size: 200%;
+    text-decoration: none;
+    margin-right: 20px;
+    color:#fff;
+    padding-bottom: 30px;
+}
 /* media querry styling start here */
 /* media screen for tablets and screen size 1200px  */
 @media screen and (max-width: 1200px) {}
