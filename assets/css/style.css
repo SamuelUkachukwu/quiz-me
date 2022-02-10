@@ -9,7 +9,7 @@
 body {
     background: url(../images/hero-image.jpg) no-repeat center center;
     background-size: cover;
-    background-color: #000;
+    background-color: #040504;
     color: #fff;
     /* position: relative; */
 }
@@ -90,7 +90,7 @@ body {
 }
 
 .card:hover {
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
 }
 
 .card-front {
@@ -117,14 +117,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
     box-shadow: 2px 2px 2px rgb(172, 172, 221);
 }
 
 .choice-box {
     width: 100%;
     position: absolute;
-    bottom: 20%;
+    bottom: 16%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -137,7 +137,51 @@ form {
     align-content: center;
     align-items: center;
 }
-footer{
+
+.hidebtn {
+    display: none;
+}
+
+.label-tags {
+    color:#217C27 ;
+    font-size: 30px;
+    font-family: 'Luckiest Guy', cursive;
+    /* padding-left: 10px; */
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.roundbtn {
+    width: 40px;
+    height: 40px;
+    border: 2px #fff solid;
+    border-radius: 50px;
+    background-color: #fffe97;
+    box-shadow: 1px 1px 2px #000, 0 0 25px #3901FF, 0 0 5px #210099;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    transition: .3s ease-out;
+}
+
+.roundbtn:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    color: #17541B;
+}
+
+.score-counter {
+    font-family: 'Luckiest Guy', cursive;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+.score-txt {}
+
+footer {
     width: 100%;
     position: absolute;
     bottom: 30px;
@@ -146,17 +190,25 @@ footer{
     align-items: center;
     justify-content: space-around;
 }
-.social-menu{
+
+.social-menu {
     display: flex;
     list-style: none;
+    transition: 3s;
 }
-.social-menu li a{
-    font-size: 200%;
+
+.social-menu li a {
+    font-size: 150%;
     text-decoration: none;
-    margin-right: 20px;
-    color:#fff;
+    margin-right: 25px;
+    color: #fff;
     padding-bottom: 30px;
 }
+
+.social-menu li a:hover {
+    color: #fffe97;
+}
+
 /* media querry styling start here */
 /* media screen for tablets and screen size 1200px  */
 @media screen and (max-width: 1200px) {}
@@ -182,8 +234,17 @@ footer{
     }
 
     .choice-box {
-        bottom: 30%;
+        bottom: 26%;
         display: block;
         text-align: center;
+    }
+
+    .label-tags {
+        margin: 0 15px;
+    }
+
+    .card-back,
+    .card:hover {
+        transform: rotateY(180deg);
     }
 }
