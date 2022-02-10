@@ -21,41 +21,21 @@
         </div>
     </header>
     <div class="main-container">
-        <section class="quiz-container">
-            <div class="card">
-                <div class="card-back">
-                    <p>question field area </p>
-                </div>
-                <div class="card-front">
-                    <p>story section area</p>
-                </div>
+        <form id="login-form" method="POST" action="login/">
+            <div class="username-box">
+                <label class="username-label" for="username">Welcome:</label>
+                <input id="username" type="text" name="username" placeholder="PlayerOne..." required>
             </div>
-        </section>
-        <div class="choice-box">
-            <form class="form-two" action="">
-                <input type="radio" id="choice-a" class="hidebtn" name="answer" value="a">
-                <label for="choice-a" class="label-tags">
-                    <div class="roundbtn">
-                        <p>A</p>
-                    </div>
-                </label>
-                <input type="radio" id="choice-b" class="hidebtn" name="answer" value="b">
-                <label for="choice-b" class="label-tags">
-                    <div class="roundbtn">
-                        <p>B</p>
-                    </div>
-                </label>
-                <input type="radio" id="choice-c" class="hidebtn" name="answer" value="c">
-                <label for="choice-c" class="label-tags">
-                    <div class="roundbtn">
-                        <p>C</p>
-                    </div>
-                </label>
-            </form>
-            <div class="score-counter">
-                <p class="score-txt">Score: <span class="score-numb">0</span></p>
+            <div class="hero-message">
+                <p>"Are you ready for the quiz game!"</p>
             </div>
-        </div>
+            <div class="button-container">
+
+                <button id="playbtn" class="playquiz" type="submit">
+                    <img class="play-button-img" src="assets/images/play.png" alt="play quiz game">
+                </button>
+            </div>
+        </form>
     </div>
     <footer>
         <ul class="social-menu">
