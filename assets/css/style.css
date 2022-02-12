@@ -133,6 +133,7 @@ body {
     width: 100%;
     display: flex;
 }
+
 /* styling for the .quiz-container starts here */
 
 .card {
@@ -164,36 +165,41 @@ body {
     padding: 20px;
     box-shadow: 2px 2px 2px rgb(108, 108, 175);
 }
-#usernameTag{
+
+#usernameTag {
     width: 100%;
     background-color: red;
     text-align: right;
 }
-.question-area{
+
+.question-area {
     width: 100%;
     padding: 1.5rem;
     display: flex;
     justify-content: center;
-align-items: center;
-font-family: 'Permanent Marker', cursive;
-font-size: 1.5rem;
-color:black
+    align-items: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5rem;
+    color: black
 }
-.flip-card{
+
+.flip-card {
     width: 95%;
     position: absolute;
-    bottom:20px;
+    bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.fancy-btn{
+
+.fancy-btn {
     font-family: 'Luckiest Guy', cursive;
-    font-size:1.5rem ;
-    background-color:pink ;
-    border:none ;
+    font-size: 1.5rem;
+    background-color: pink;
+    border: none;
     cursor: pointer;
 }
+
 .card-back {
     position: absolute;
     width: 100%;
@@ -207,15 +213,18 @@ color:black
     transform: rotateX(180deg);
     box-shadow: 2px 2px 2px rgb(172, 172, 221);
 }
-.return-btn{
+
+.return-btn {
     width: 95%;
-position: absolute;
-bottom:20px;
-text-align: right;
+    position: absolute;
+    bottom: 20px;
+    text-align: right;
 }
+
 #return {
-    background-color:green;
+    background-color: green;
 }
+
 .choice-box,
 .button-container {
     width: 100%;
@@ -337,10 +346,12 @@ footer {
     .label-tags {
         margin: 0 15px;
     }
+
     .card:hover {
         /* transform: rotateY(180deg); */
     }
-    .flip-card{
-        width:90%;
+
+    .flip-card {
+        width: 90%;
     }
 }
