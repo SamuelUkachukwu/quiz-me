@@ -63,7 +63,43 @@ let quiz = [{
         }
     }
 ];
-
+let trivia = [{
+        facts: "A jar of Nutella sells every 2.5 seconds."
+    },
+    {
+        facts: "The world's tallest man was Robert Wadlow from Michigan, America. He measured 8 feet and 2 inches (or 272cm)."
+    },
+    {
+        facts: "'Arachibutyrophobia' is the fear of getting peanut bar stuck to the roof of your mouth."
+    },
+    {
+        facts: "There are 31,557,600 seconds in a year."
+    },
+    {
+        facts: "A hippopotamus can run faster than a man."
+    },
+    {
+        facts: "A crocodile cannot stick its tongue out."
+    },
+    {
+        facts: "Most insects hatch from eggs."
+    },
+    {
+        facts: "Pigs can't look up into the sky - it's physically impossible."
+    },
+    {
+        facts: "The shark is the only fish that can blink with both eyes."
+    },
+    {
+        facts: "An ostrich's eye is bigger than its whole brain."
+    },
+    {
+        facts: "Kangaroos can't walk backwards."
+    },
+    {
+        facts: "A dog's nose is like a human finger print - unique to its owner."
+    }
+]
 let username = document.getElementById('username');
 let usernameBase = [];
 let message = document.getElementById('error-message')
@@ -83,13 +119,18 @@ function startGame() {
     } else {
         gameBox.innerHTML =
             `<section class="quiz-container">
-            <div class="card">
+            <div id="card-box" class="card">
                 <div class="card-back">
-                    <div class="info-area">
-                        <p id="trivia">Do You Know... </p>
-                    </div>
-                    <div class="return-btn">
-                        <button id="return" class="fancy-btn">Return</button>
+                <div>
+                <div class="trivia-box">
+                    <h3 id="trivia">Do You Know... </h3>
+                </div>
+                <div class="trivia-box">
+                    <p id="new-trivia"></p>
+                </div>
+                </div>
+                 <div class="return-btn">
+                        <button id="return" onclick="unflipCard();" class="fancy-btn">Return</button>
                     </div>
                 </div>
                 <div class="card-front">
@@ -103,7 +144,7 @@ function startGame() {
                         <p id="answer"></p>
                     </div>
                     <div class="flip-card">
-                        <button id="answer-btn" class="fancy-btn">Trivia</button>
+                        <button id="trivia-btn" onclick="displayTrivia();" class="fancy-btn">Trivia</button>
                         <P id="user-choice" class="fancy-btn">A</P>
                         <button id="next-question" onclick="scorePlayer();" class="fancy-btn">NEXT</button>
                     </div>
@@ -194,6 +235,30 @@ function scoreCount() {
     document.getElementById('score-numb').innerHTML = value;
 }
 
+function displayTrivia() {
+    //the card flips 
+    let triviaCard = document.getElementById('card-box');
+    triviaCard.classList.add("flip");
+
+    // trivia is shuffled
+    for (let m = trivia.length - 1; m > 0; m--) {
+        let n = Math.floor(Math.random() * (m + 1))
+        let p = trivia[m]
+        trivia[m] = trivia[n]
+        trivia[n] = p
+    }
+    // trivia is displayed on inner text
+    let triviamessage = document.getElementById('new-trivia');
+    triviamessage.innerText = trivia[0].facts;
+    console.log(trivia[0].facts);
+}
+
+function unflipCard() {
+    // card flips back displaying question area
+    let triviaCard = document.getElementById('card-box');
+    triviaCard.classList.remove("flip");
+
+}
 
 // wait for the DOM to finish loading before running the game
 // get the play game element and add the start function to it

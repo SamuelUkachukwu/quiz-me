@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Luckiest+Guy&family=Permanent+Marker&display=swap');
 
 * {
     margin: 0;
@@ -150,8 +150,20 @@ body {
     margin: 0 auto;
 }
 
-.card:hover {
-    /* transform: rotateX(180deg); */
+.trivia-box {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 16px;
+    color: black;
+}
+
+.flip {
+    transform: rotateX(180deg);
 }
 
 .card-front {
