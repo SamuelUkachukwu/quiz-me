@@ -1,13 +1,45 @@
 let quiz = [{
-        question: 'what is your name?  a Mary. b): Joe.',
+        question: 'What is the next number after 9?  a): 8. b): 10. c): 11',
+        choices: {
+            a: false,
+            b: true,
+            c: false
+        }
+    },
+    {
+        question: 'What color is a banana? a): blue. b): yellow. c): pink',
+        choices: {
+            a: false,
+            b: true,
+            c: false
+        }
+    },
+    {
+        question: 'Take 4 away from 10? a): 7. b): 9. c): 6.',
+        choices: {
+            a: false,
+            b: false,
+            c: true
+        }
+    },
+    {
+        question: 'The day after Monday is...?  a): Teusday. b): Sunday. c): Wednesday',
         choices: {
             a: true,
             b: false,
-            c:false
+            c: false
         }
     },
     {
-        question: 'What color is a banana? a): blue. b): yellow.',
+        question: 'Which is longer a Car or a skeateboard?  a): Skateboard. b): None. c): Car',
+        choices: {
+            a: false,
+            b: false,
+            c: true
+        }
+    },
+    {
+        question: 'Counting up from 40, what number comes next?  a): 45. b): 41. c): 39',
         choices: {
             a: false,
             b: true,
@@ -15,15 +47,15 @@ let quiz = [{
         }
     },
     {
-        question: 'How do you spell ball? a): Call. b): Ball.',
+        question: 'How many Months are there in a year?  a): 9. b): 10. c): 12',
         choices: {
             a: false,
-            b: true,
-            c: false
+            b: false,
+            c: true
         }
     },
     {
-        question: 'The day after Monday is...?  a): Teusday. b): Sunday.',
+        question: 'Seventh Letter of the Alphabet?  a): G. b): R. c): F',
         choices: {
             a: true,
             b: false,
@@ -100,7 +132,7 @@ function startGame() {
                 </label>
             </div>
             <div class="score-counter">
-                <p class="score-txt">Score: <span class="score-numb">0</span></p>
+                <p class="score-txt">Score: <span id="score-numb">0</span></p>
             </div>
         </div>`;
         usernameBase.push(username.value)
@@ -154,19 +186,18 @@ function scorePlayer() {
     }
 }
 // score counter function
-    function scoreCount() {
-        let score = document.getElementById('score');
-        let value = score.innerHTML
-            ++value
-        console.log(value)
-        document.getElementById('score').innerHTML =
-            value
-    }
+function scoreCount() {
+    let score = document.getElementById('score-numb');
+    let value = score.innerHTML
+        ++value
+    console.log(value);
+    document.getElementById('score-numb').innerHTML = value;
+}
 
 
-    // wait for the DOM to finish loading before running the game
-    // get the play game element and add the start function to it
-    // document.addEventListener('DOMContentLoaded', function () {
-    //     let playGame = document.getElementById('playbtn');
-    //     playGame.addEventListener('click', startQuiz);
-    // })
+// wait for the DOM to finish loading before running the game
+// get the play game element and add the start function to it
+// document.addEventListener('DOMContentLoaded', function () {
+//     let playGame = document.getElementById('playbtn');
+//     playGame.addEventListener('click', startQuiz);
+// })
