@@ -151,7 +151,7 @@ body {
 }
 
 .card:hover {
-    transform: rotateX(180deg);
+    /* transform: rotateX(180deg); */
 }
 
 .card-front {
@@ -166,21 +166,30 @@ body {
     box-shadow: 2px 2px 2px rgb(108, 108, 175);
 }
 
-#usernameTag {
+#username-tag {
     width: 100%;
-    background-color: red;
+    font-size: 14px;
     text-align: right;
+    font-family: 'Permanent Marker', cursive;
+    color: #210099;
+    /* text-shadow: 1px 1px 2px #000, 0 0 25px #3901FF, 0 0 5px #210099; */
+    /* text-transform: uppercase; */
+    /* letter-spacing: 2px; */
 }
 
-.question-area {
+.info-area {
     width: 100%;
-    padding: 1.5rem;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 1.5rem;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 16px;
     color: black
+}
+
+.info-area-reaction {
+    font-family: 'Permanent Marker', cursive;
 }
 
 .flip-card {
@@ -190,14 +199,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #000;
 }
 
 .fancy-btn {
     font-family: 'Luckiest Guy', cursive;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     background-color: pink;
     border: none;
     cursor: pointer;
+}
+
+#user-choice {
+    cursor: auto;
 }
 
 .card-back {
@@ -207,9 +221,6 @@ body {
     border-radius: 5px;
     background-color: green;
     backface-visibility: hidden;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
     transform: rotateX(180deg);
     box-shadow: 2px 2px 2px rgb(172, 172, 221);
 }
@@ -251,7 +262,6 @@ body {
     color: #217C27;
     font-size: 30px;
     font-family: 'Luckiest Guy', cursive;
-    /* padding-left: 10px; */
     margin-right: 30px;
     cursor: pointer;
 }
@@ -340,6 +350,10 @@ footer {
     .choice-box {
         bottom: 26%;
         display: block;
+        text-align: center;
+    }
+
+    #username-tag {
         text-align: center;
     }
 

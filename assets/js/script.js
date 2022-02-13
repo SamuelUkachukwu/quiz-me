@@ -1,8 +1,44 @@
+let quiz = [{
+        question: 'what is your name?  a Mary. b): Joe.',
+        choices: {
+            a: true,
+            b: false,
+            c:false
+        }
+    },
+    {
+        question: 'What color is a banana? a): blue. b): yellow.',
+        choices: {
+            a: false,
+            b: true,
+            c: false
+        }
+    },
+    {
+        question: 'How do you spell ball? a): Call. b): Ball.',
+        choices: {
+            a: false,
+            b: true,
+            c: false
+        }
+    },
+    {
+        question: 'The day after Monday is...?  a): Teusday. b): Sunday.',
+        choices: {
+            a: true,
+            b: false,
+            c: false
+        }
+    }
+];
+
 let username = document.getElementById('username');
 let usernameBase = [];
 let message = document.getElementById('error-message')
 let gameBox = document.querySelector('.main-container');
 console.log(gameBox.innerHTML);
+
+// initiate start quiz game
 let start = document.getElementById('playbtn');
 start.addEventListener('click', startGame)
 
@@ -13,72 +49,124 @@ function startGame() {
     } else if (usernameBase.includes(username.value)) {
         message.innerText = `The Username "${username.value}" Has Been Taken`;
     } else {
-        gameBox.innerHTML = 
-        `<section class="quiz-container">
-        <div class="card">
-            <div class="card-back">
-                <div class="question-area">
-                    <p id="answer">question field area </p>
+        gameBox.innerHTML =
+            `<section class="quiz-container">
+            <div class="card">
+                <div class="card-back">
+                    <div class="info-area">
+                        <p id="trivia">Do You Know... </p>
+                    </div>
+                    <div class="return-btn">
+                        <button id="return" class="fancy-btn">Return</button>
+                    </div>
                 </div>
-                <div class="return-btn">
-                    <button id="return" class="fancy-btn">return</button>
+                <div class="card-front">
+                    <div id="username-tag">
+                        <p> Welcome: ${username.value}</p>
+                    </div>
+                    <div class="info-area">
+                        <p id="questions"></p>
+                    </div>
+                    <div class="info-area info-area-reaction">
+                        <p id="answer"></p>
+                    </div>
+                    <div class="flip-card">
+                        <button id="answer-btn" class="fancy-btn">Trivia</button>
+                        <P id="user-choice" class="fancy-btn">A</P>
+                        <button id="next-question" onclick="scorePlayer();" class="fancy-btn">NEXT</button>
+                    </div>
                 </div>
             </div>
-            <div class="card-front">
-                <div id="usernameTag">
-                    <p> Welcome: ${username.value}</p>
-                </div>
-                <div class="question-area">
-                    <p id="question">story section area</p>
-                </div>
-                <div class="flip-card">
-                    <button id="answer-btn" class="fancy-btn">Answer!</button>
-                    <button id="next-question" class="fancy-btn">Next</button>
-                </div>
+        </section>
+        <div class="choice-box">
+            <div class="form-two">
+                <input type="radio" id="choice-a" class="hidebtn" name="answer" value="a">
+                <label for="choice-a" class="label-tags">
+                    <div class="roundbtn">
+                        <p>A</p>
+                    </div>
+                </label>
+                <input type="radio" id="choice-b" class="hidebtn" name="answer" value="b">
+                <label for="choice-b" class="label-tags">
+                    <div class="roundbtn">
+                        <p>B</p>
+                    </div>
+                </label>
+                <input type="radio" id="choice-c" class="hidebtn" name="answer" value="c">
+                <label for="choice-c" class="label-tags">
+                    <div class="roundbtn">
+                        <p>C</p>
+                    </div>
+                </label>
             </div>
-        </div>
-    </section>
-    <div class="choice-box">
-        <form class="form-two" action="">
-            <input type="radio" id="choice-a" class="hidebtn" name="answer" value="a">
-            <label for="choice-a" class="label-tags">
-                <div class="roundbtn">
-                    <p>A</p>
-                </div>
-            </label>
-            <input type="radio" id="choice-b" class="hidebtn" name="answer" value="b">
-            <label for="choice-b" class="label-tags">
-                <div class="roundbtn">
-                    <p>B</p>
-                </div>
-            </label>
-            <input type="radio" id="choice-c" class="hidebtn" name="answer" value="c">
-            <label for="choice-c" class="label-tags">
-                <div class="roundbtn">
-                    <p>C</p>
-                </div>
-            </label>
-        </form>
-        <div class="score-counter">
-            <p class="score-txt">Score: <span class="score-numb">0</span></p>
-        </div>
-    </div>`;
-
-        
+            <div class="score-counter">
+                <p class="score-txt">Score: <span class="score-numb">0</span></p>
+            </div>
+        </div>`;
+        usernameBase.push(username.value)
 
     }
-
+    shuffleQuestion();
 }
 
+// shuffle question and display fisher yeates method
+function shuffleQuestion() {
+    for (let i = quiz.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1))
+        let k = quiz[i]
+        quiz[i] = quiz[j]
+        quiz[j] = k
+    }
+    let questions = document.getElementById('questions');
+    questions.innerText = quiz[0].question;
+    console.log(quiz[0].choices.a)
+}
+
+// function to check players answer and score
+function scorePlayer() {
+    let button1 = document.getElementById('choice-a');
+    let button2 = document.getElementById('choice-b');
+    let button3 = document.getElementById('choice-c');
+    let displayAnswer = document.getElementById('answer');
+
+    if (button1.checked == true && quiz[0].choices.a == true) {
+        console.log('hello zombie');
+        console.log(button1.value);
+        displayAnswer.innerText = 'Briliant!';
+        scoreCount()
+        shuffleQuestion();
+    } else if (button2.checked == true && quiz[0].choices.b == true) {
+        displayAnswer.innerText = 'Briliant!';
+        console.log('good morning zombie');
+        console.log(button2.value);
+        scoreCount()
+        shuffleQuestion();
+    } else if (button3.checked == true && quiz[0].choices.c == true) {
+        displayAnswer.innerText = 'Briliant!';
+        console.log('good morning zombie');
+        console.log(button2.value);
+        scoreCount()
+        shuffleQuestion();
+    } else {
+        console.log('this zombie sef');
+        displayAnswer.innerText = 'wrong!';
+        shuffleQuestion();
+    }
+}
+// score counter function
+    function scoreCount() {
+        let score = document.getElementById('score');
+        let value = score.innerHTML
+            ++value
+        console.log(value)
+        document.getElementById('score').innerHTML =
+            value
+    }
 
 
-
-
-
-
-// wait for the DOM to finish loading before running the game
-// get the play game element and add the start function to it
-// document.addEventListener('DOMContentLoaded', function () {
-//     let playGame = document.getElementById('playbtn');
-//     playGame.addEventListener('click', startQuiz);
-// })
+    // wait for the DOM to finish loading before running the game
+    // get the play game element and add the start function to it
+    // document.addEventListener('DOMContentLoaded', function () {
+    //     let playGame = document.getElementById('playbtn');
+    //     playGame.addEventListener('click', startQuiz);
+    // })
