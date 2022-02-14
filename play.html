@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <div id="logo-box">
+            <a href="index.html">
+                <img id="logo" src="assets/images/logo.png" alt="">
+            </a>
+        </div>
+        <div id="hero-title">
+            <h1 id="title">Quiz Me!</h1>
+        </div>
+    </header>
+    <div class="main-container">
+        <div id="overlay-top" class="overlay-visible overlay-hidden overlay-start">
+            <div class="username-box font-one">
+                <label for="username">
+                    <h2>Welcome!</h2>
+                </label><br>
+                <input id="username" class="font-one" type="text" name="username" placeholder="PlayerOne...">
+            </div>
+            <div class="font-two">
+                <p id="error-message">"Are you ready for the quiz game!"</p>
+            </div>
+            <div>
+                <button id="playbtn" class="playquiz font-one fancy-btn" type="button">START QUIZ!</button>
+            </div>
+        </div>
+        <section class="quiz-container">
+            <div id="card-box" class="card">
+                <div class="card-back">
+                    <div>
+                        <div class="trivia-box">
+                            <h3 id="trivia">Do You Know... </h3>
+                        </div>
+                        <div class="trivia-box">
+                            <p id="new-trivia">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ut
+                                consectetur mollitia conseq</p>
+                        </div>
+                    </div>
+                    <div class="return-btn">
+                        <button id="return" onclick="unflipCard();" class="fancy-btn font-one">Return</button>
+                    </div>
+                </div>
+                <div class="card-front">
+                    <div id="username-tag" class="font-two">
+                        <p> Go ${username.value}!</p>
+                    </div>
+                    <div class="info-area font-one">
+                        <p id="questions">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas consequuntu
+                            gjgjjrjsjks.</p>
+                    </div>
+                    <div class="info-area font-two">
+                        <p id="answer">Brilliant!</p>
+                    </div>
+                    <div class="flip-card">
+                        <button id="trivia-btn" onclick="displayTrivia();" class="fancy-btn font-one">Trivia</button>
+                        <P id="user-choice" class="fancy-btn font-one">A</P>
+                        <button id="next-question" onclick="scorePlayer();" class="fancy-btn font-one">NEXT</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="choice-box">
+            <div class="form-two">
+                <input type="radio" id="choice-a" class="hidebtn" name="answer" value="a">
+                <label for="choice-a" class="label-tags">
+                    <div class="roundbtn">
+                        <p>A</p>
+                    </div>
+                </label>
+                <input type="radio" id="choice-b" class="hidebtn" name="answer" value="b">
+                <label for="choice-b" class="label-tags">
+                    <div class="roundbtn">
+                        <p>B</p>
+                    </div>
+                </label>
+                <input type="radio" id="choice-c" class="hidebtn" name="answer" value="c">
+                <label for="choice-c" class="label-tags">
+                    <div class="roundbtn">
+                        <p>C</p>
+                    </div>
+                </label>
+            </div>
+            <div class="score-counter">
+                <p>Q: <span id="question-numb">15</span></p>
+            </div>
+            <div class="score-counter">
+                <p> Score: <span id="score-numb">0</span></p>
+            </div>
+        </div>
+        <div id="overlay-bottom" class="overlay-visible overlay-hidden overlay-replay">
+            <div class="overlay-img-box">
+                <img class="overlay-img" src="assets/images/girl-books.png" alt="girl sitting on books">
+            </div>
+            <div>
+                <div id="overlay-text">
+                    <h4 id="score-display-txt">Score: <span>0</span> /15</h4>
+                </div>
+                <div class="replay-btn-box">
+                    <button type="button" id="replay-btn" class="fancy-btn font-one">Replay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul class="social-menu">
+            <li><a href="https://twitter.com/?lang=en" target="_blank" rel="noopener"
+                    aria-label="visit our twitter page (opens in a new tab)"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                    aria-label="visit our instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                    aria-label="visit our facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                    aria-label="visit our youtube page (opens in a new tab)"><i class="fab fa-youtube"></i></a>
+        </ul>
+    </footer>
+    <script src="https://kit.fontawesome.com/0e95d75add.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
