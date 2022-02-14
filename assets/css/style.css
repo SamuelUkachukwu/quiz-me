@@ -25,7 +25,7 @@ body {
     width: 25%;
     top: 10px;
     left: 20px;
-    z-index: 300;
+    z-index: 1;
 }
 
 #logo {
@@ -99,7 +99,8 @@ body {
 }
 
 .hero-message {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     font-size: 1.5rem;
     font-family: 'Permanent Marker', cursive;
     padding-top: 50px;
@@ -217,7 +218,7 @@ body {
 .fancy-btn {
     font-family: 'Luckiest Guy', cursive;
     font-size: 1.2rem;
-    background-color: pink;
+    background-color: rgba(0, 0, 0, 0);
     border: none;
     cursor: pointer;
 }
@@ -305,8 +306,41 @@ body {
     letter-spacing: 2px;
     font-size: 30px;
 }
-
-
+/* styling for overlay starts here */
+.overlay-visible{
+    width: 95%;
+    height: 95%;
+    background-color: #FFB4E1;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    margin: auto;
+    border: 2px solid #FF4799;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    z-index: 100;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.2rem; 
+}
+.overlay-hidden{
+    display: none;
+}
+.overlay-img-box{
+   width:23%;
+/* background-color: aquamarine; */
+margin-right: 40px;
+}
+.overlay-img{
+   width:100%;
+}
+.replay-btn-box{
+    text-align: center;
+}
 footer {
     width: 100%;
     position: absolute;
@@ -336,14 +370,15 @@ footer {
 }
 
 /* media querry styling start here */
-/* media screen for tablets and screen size 1200px  */
-@media screen and (max-width: 1200px) {}
 
 /* media screen for devices and screen size 950px  */
-@media screen and (max-width: 950px) {}
-
-/* media screen for devices and screen size 768px  */
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 950px) {
+    .overlay-img-box{
+        width:35%;
+        margin-right: 20px;
+     
+     }
+}
 
 /* media screen for devices and screen size 600px  */
 @media screen and (max-width: 600px) {
@@ -373,11 +408,16 @@ footer {
         margin: 0 15px;
     }
 
-    .card:hover {
-        /* transform: rotateY(180deg); */
+    .flip {
+        transform: rotateY(180deg);
     }
 
     .flip-card {
         width: 90%;
     }
+    .overlay-img-box{
+        /* width:40%; */
+        margin-right: 10px;
+     
+     }
 }

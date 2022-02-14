@@ -118,64 +118,77 @@ function startGame() {
         message.innerText = `The Username "${username.value}" Has Been Taken`;
     } else {
         gameBox.innerHTML =
-            `<section class="quiz-container">
-            <div id="card-box" class="card">
-                <div class="card-back">
+    `<section class="quiz-container">
+        <div id="card-box" class="card">
+            <div class="card-back">
                 <div>
-                <div class="trivia-box">
-                    <h3 id="trivia">Do You Know... </h3>
-                </div>
-                <div class="trivia-box">
-                    <p id="new-trivia"></p>
-                </div>
-                </div>
-                 <div class="return-btn">
-                        <button id="return" onclick="unflipCard();" class="fancy-btn">Return</button>
+                    <div class="trivia-box">
+                        <h3 id="trivia">Do You Know... </h3>
+                    </div>
+                    <div class="trivia-box">
+                        <p id="new-trivia"></p>
                     </div>
                 </div>
-                <div class="card-front">
-                    <div id="username-tag">
-                        <p> Welcome: ${username.value}</p>
-                    </div>
-                    <div class="info-area">
-                        <p id="questions"></p>
-                    </div>
-                    <div class="info-area info-area-reaction">
-                        <p id="answer"></p>
-                    </div>
-                    <div class="flip-card">
-                        <button id="trivia-btn" onclick="displayTrivia();" class="fancy-btn">Trivia</button>
-                        <P id="user-choice" class="fancy-btn">A</P>
-                        <button id="next-question" onclick="scorePlayer();" class="fancy-btn">NEXT</button>
-                    </div>
+                <div class="return-btn">
+                    <button id="return" onclick="unflipCard();" class="fancy-btn">Return</button>
                 </div>
             </div>
-        </section>
-        <div class="choice-box">
-            <div class="form-two">
-                <input type="radio" id="choice-a" class="hidebtn" name="answer" value="a">
-                <label for="choice-a" class="label-tags">
-                    <div class="roundbtn">
-                        <p>A</p>
-                    </div>
-                </label>
-                <input type="radio" id="choice-b" class="hidebtn" name="answer" value="b">
-                <label for="choice-b" class="label-tags">
-                    <div class="roundbtn">
-                        <p>B</p>
-                    </div>
-                </label>
-                <input type="radio" id="choice-c" class="hidebtn" name="answer" value="c">
-                <label for="choice-c" class="label-tags">
-                    <div class="roundbtn">
-                        <p>C</p>
-                    </div>
-                </label>
+            <div class="card-front">
+                <div id="username-tag">
+                    <p> Welcome: ${username.value}</p>
+                </div>
+                <div class="info-area">
+                    <p id="questions"></p>
+                </div>
+                <div class="info-area info-area-reaction">
+                    <p id="answer"></p>
+                </div>
+                <div class="flip-card">
+                    <button id="trivia-btn" onclick="displayTrivia();" class="fancy-btn">Trivia</button>
+                    <P id="user-choice" class="fancy-btn">A</P>
+                    <button id="next-question" onclick="scorePlayer();" class="fancy-btn">NEXT</button>
+                </div>
             </div>
-            <div class="score-counter">
-                <p class="score-txt">Score: <span id="score-numb">0</span></p>
+        </div>
+    </section>
+    <div class="choice-box">
+        <div class="form-two">
+            <input type="radio" id="choice-a" class="hidebtn" name="answer" value="a">
+            <label for="choice-a" class="label-tags">
+                <div class="roundbtn">
+                    <p>A</p>
+                </div>
+            </label>
+            <input type="radio" id="choice-b" class="hidebtn" name="answer" value="b">
+            <label for="choice-b" class="label-tags">
+                <div class="roundbtn">
+                    <p>B</p>
+                </div>
+            </label>
+            <input type="radio" id="choice-c" class="hidebtn" name="answer" value="c">
+            <label for="choice-c" class="label-tags">
+                <div class="roundbtn">
+                    <p>C</p>
+                </div>
+            </label>
+        </div>
+        <div class="score-counter">
+            <p class="score-txt">Score: <span id="score-numb">0</span></p>
+        </div>
+    </div>
+    <div id="overlay" class="overlay-visible overlay-hidden">
+        <div class="overlay-img-box">
+            <img class="overlay-img" src="assets/images/girl-books.png" alt="girl sitting on books">
+        </div>
+        <div>
+            <div id="overlay-text">
+                <h4 id="score-display-txt">Score: <span>0</span> /15</h4>
             </div>
-        </div>`;
+            <div class="replay-btn-box">
+                <button type="button" id="replay-btn" class="fancy-btn">Replay</button>
+            </div>
+        </div>
+    </div>`;
         usernameBase.push(username.value)
 
     }
