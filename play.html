@@ -22,7 +22,7 @@
         </div>
     </header>
     <div class="main-container">
-        <div id="overlay-top" class="overlay-visible overlay-hidden overlay-start">
+        <div id="overlay-top" class="overlay-visible  overlay-start">
             <div class="username-box font-one">
                 <label for="username">
                     <h2>Welcome!</h2>
@@ -54,18 +54,17 @@
                 </div>
                 <div class="card-front">
                     <div id="username-tag" class="font-two">
-                        <p> Go ${username.value}!</p>
+                        
                     </div>
                     <div class="info-area font-one">
-                        <p id="questions">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas consequuntu
-                            gjgjjrjsjks.</p>
+                        <p id="questions"></p>
                     </div>
                     <div class="info-area font-two">
-                        <p id="answer">Brilliant!</p>
+                        <p id="answer"></p>
                     </div>
                     <div class="flip-card">
                         <button id="trivia-btn" onclick="displayTrivia();" class="fancy-btn font-one">Trivia</button>
-                        <P id="user-choice" class="fancy-btn font-one">A</P>
+                        <P id="user-choice" class="fancy-btn font-one"></P>
                         <button id="next-question" onclick="scorePlayer();" class="fancy-btn font-one">NEXT</button>
                     </div>
                 </div>
@@ -73,19 +72,19 @@
         </section>
         <div class="choice-box">
             <div class="form-two">
-                <input type="radio" id="choice-a" class="hidebtn" name="answer" value="a">
+                <input type="radio" id="choice-a" class="hidebtn" name="answer" value="A">
                 <label for="choice-a" class="label-tags">
                     <div class="roundbtn">
                         <p>A</p>
                     </div>
                 </label>
-                <input type="radio" id="choice-b" class="hidebtn" name="answer" value="b">
+                <input type="radio" id="choice-b" class="hidebtn" name="answer" value="B">
                 <label for="choice-b" class="label-tags">
                     <div class="roundbtn">
                         <p>B</p>
                     </div>
                 </label>
-                <input type="radio" id="choice-c" class="hidebtn" name="answer" value="c">
+                <input type="radio" id="choice-c" class="hidebtn" name="answer" value="C">
                 <label for="choice-c" class="label-tags">
                     <div class="roundbtn">
                         <p>C</p>

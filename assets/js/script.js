@@ -100,3 +100,95 @@ let trivia = [{
         facts: "A dog's nose is like a human finger print - unique to its owner."
     }
 ]
+
+document.addEventListener('DOMContentLoaded', function () {
+    let playGame = document.getElementById('playbtn');
+    playGame.addEventListener('click', startQuiz);
+})
+
+// start game by removing the overlay and populating question area wit new question
+let username = document.getElementById('username');
+let usernameBase = [];
+let message = document.getElementById('error-message');
+let overlaytop = document.getElementById('overlay-top');
+let userTag = document.getElementById('username-tag')
+
+function startQuiz() {
+    if (username.value === '' || username.value == null) {
+        console.log('user name is empty');
+        message.innerText = `Please Select A UserName`;
+    } else if (usernameBase.includes(username.value)) {
+        message.innerText = `The Username "${username.value}" Has Been Taken`;
+    } else {
+        overlaytop.classList.add('overlay-hidden');
+        usernameBase.push(username.value)
+    }
+    userTag.innerHTML = `<p> Go ${username.value}!</p>`;
+    shuffleQuestion();
+}
+
+// function to shuffleQuestion and display 
+function shuffleQuestion() {
+    for (let i = quiz.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1))
+        let k = quiz[i]
+        quiz[i] = quiz[j]
+        quiz[j] = k
+    }
+    let questions = document.getElementById('questions');
+    questions.innerText = quiz[0].question;
+    console.log(quiz[0].choices.a);
+    console.log(quiz[0].question);
+}
+
+// function to display users answer
+
+let radioBottons = document.querySelectorAll("input[name='answer']");
+console.log(radioBottons)
+for (i = 0; i < radioBottons.length; i++) {
+    console.log(radioBottons[i]);
+    radioBottons[i].addEventListener("change", playerChoice)
+}
+
+function playerChoice() {
+    let choiceDisplay = document.getElementById('user-choice')
+    let selected = document.querySelector("input[name='answer']:checked").value;
+    console.log(selected);
+    choiceDisplay.innerText = selected;
+}
+
+// function to check player answer and data base answer while scoring and counting down questions 
+
+function scorePlayer(){
+    let selected = document.querySelector("input[name='answer']:checked").value;
+    let displayAnswer = document.getElementById('answer');
+        if (selected === 'A' && quiz[0].choices.a === true) {
+            displayAnswer.innerText = 'Briliant!';
+            console.log(selected);
+            scoreCount()
+            shuffleQuestion();
+        } else if (selected === 'B' && quiz[0].choices.b === true){
+            displayAnswer.innerText = 'Briliant!';
+            console.log(selected);
+            scoreCount()
+            shuffleQuestion();
+        }else if (selected === 'C' && quiz[0].choices.c === true) {
+            displayAnswer.innerText = 'Briliant!';
+            console.log(selected);
+            scoreCount()
+            shuffleQuestion();
+        }else {
+            displayAnswer.innerText = 'wrong!';
+            shuffleQuestion();
+        }
+}
+// function to count score 
+function scoreCount() {
+    let score = document.getElementById('score-numb');
+    let value = score.innerHTML
+        ++value
+    console.log(value);
+    document.getElementById('score-numb').innerHTML = value;
+}
+
+// function to decrease question count
