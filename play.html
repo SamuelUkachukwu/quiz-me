@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="quiz me app for kids with fun trivia ballinasloe ireland">
+    <meta name="keywords" content="quiz, kids game, learning app, ">
+    <meta name="author" content="Samuel Ukachukwu">
+    <link rel="icon" href="assets/images/logo.png">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Quiz Me</title>
 </head>
 
 <body>
@@ -44,8 +48,7 @@
                             <h3 id="trivia">Do You Know... </h3>
                         </div>
                         <div class="trivia-box">
-                            <p id="new-trivia">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ut
-                                consectetur mollitia conseq</p>
+                            <p id="new-trivia"></p>
                         </div>
                     </div>
                     <div class="return-btn">
@@ -54,7 +57,7 @@
                 </div>
                 <div class="card-front">
                     <div id="username-tag" class="font-two">
-                        
+
                     </div>
                     <div class="info-area font-one">
                         <p id="questions"></p>
@@ -66,6 +69,8 @@
                         <button id="trivia-btn" onclick="displayTrivia();" class="fancy-btn font-one">Trivia</button>
                         <P id="user-choice" class="fancy-btn font-one"></P>
                         <button id="next-question" onclick="scorePlayer();" class="fancy-btn font-one">NEXT</button>
+                        <!-- <input type="radio" id="next-question" onclick="scorePlayer();" class="hidebtn" name="answer" value="" >
+                        <label for="next-question" class="fancy-btn font-one">NEXT</label> -->
                     </div>
                 </div>
             </div>
@@ -104,10 +109,11 @@
             </div>
             <div>
                 <div id="overlay-text">
-                    <h4 >Score: <span id="score-display-txt">0</span> /15</h4>
+                    <h4>Score: <span id="score-display-txt">0</span> /15</h4>
                 </div>
                 <div class="replay-btn-box">
-                    <button type="button" id="replay-btn" class="fancy-btn font-one" onclick="replayQuiz();">Replay</button>
+                    <button type="button" id="replay-btn" class="fancy-btn font-one"
+                        onclick="replayQuiz();">Replay</button>
                 </div>
             </div>
         </div>

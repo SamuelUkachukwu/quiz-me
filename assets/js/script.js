@@ -127,7 +127,7 @@ function startQuiz() {
     shuffleQuestion();
 }
 
-// function to shuffleQuestion and display 
+// function to shuffleQuestion and display. Code used is Fisher Yates
 function shuffleQuestion() {
     for (let i = quiz.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1))
@@ -167,23 +167,27 @@ function scorePlayer() {
         console.log(selected);
         scoreCount()
         countQuestion()
-        shuffleQuestion();
+        shuffleQuestion()
+        scrubRadiobuttons();
     } else if (selected === 'B' && quiz[0].choices.b === true) {
         displayAnswer.innerText = 'Briliant!';
         console.log(selected);
         scoreCount()
         countQuestion()
         shuffleQuestion();
+        scrubRadiobuttons()
     } else if (selected === 'C' && quiz[0].choices.c === true) {
         displayAnswer.innerText = 'Briliant!';
         console.log(selected);
         scoreCount()
         countQuestion()
         shuffleQuestion();
+        scrubRadiobuttons()
     } else {
         displayAnswer.innerText = 'wrong!';
         countQuestion()
         shuffleQuestion();
+        scrubRadiobuttons();
     }
 }
 // function to count score 
@@ -222,4 +226,39 @@ function replayQuiz() {
     score.innerText = 0;
     let questionResetCount = document.getElementById('question-numb');
     questionResetCount.innerText = 15;
+}
+
+function scrubRadiobuttons() {
+    //  Shawn Steward stackoverflow on scrubbing radio button input
+    document.getElementById("choice-a").checked = false;
+    document.getElementById("choice-b").checked = false;
+    document.getElementById("choice-c").checked = false;
+    let scrubertext = document.getElementById('user-choice');
+    scrubertext.innerText = '';
+}
+
+// functions for the trivia message
+function displayTrivia() {
+    //the card flips 
+    let triviaCard = document.getElementById('card-box');
+    triviaCard.classList.add("flip");
+
+    // trivia is shuffled
+    for (let m = trivia.length - 1; m > 0; m--) {
+        let n = Math.floor(Math.random() * (m + 1))
+        let p = trivia[m]
+        trivia[m] = trivia[n]
+        trivia[n] = p
+    }
+    // trivia is displayed on inner text
+    let triviamessage = document.getElementById('new-trivia');
+    triviamessage.innerText = trivia[0].facts;
+    console.log(trivia[0].facts);
+}
+
+function unflipCard() {
+    // card flips back displaying question area
+    let triviaCard = document.getElementById('card-box');
+    triviaCard.classList.remove("flip");
+
 }
