@@ -1,108 +1,126 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome SamuelUkachukwu,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# QUIZ ME 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
+## 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The QUIZ ME is an application designed to give kids an educative moment of fun answering daily to random question and also it offers informative facts on trivial issues around the world. it is designed with the age bracket of 7 years and up wards but adults are sure to find it engaging too.  
 
-`python3 -m http.server`
+users of the app are requested to create a user name and engage in answering 15 random questions receiving a score at the end of the session.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+![responsive design of the website from ami.responsive.com](assets/images/responsive test.jpg)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+## Features:
 
-Another blue button should appear to click: _Open Browser_.
+**Navigation:**
+![screenshot of navigation page](assets/images/homepage and navigation.jpg)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+1.	the site is designed to be as simple as possible as the target users age bracket would allow. images with links to refresh the page back to the home page serves as the navigation. 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+2.	the middle of the page is a single link assigned "play" this link when clicked takes the user to the game page
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+3. The hero image is a static background image well suited for the dark theme of the site and allow users much sight friendly screen time.   
+4. Below the play button is the footer and offers site users a link to the social media pages and more exploration.
+links open in new browser tabs.
 
-------
+ **Game Area:**
+![screenshot of the Game Area](assets/images/ready page.jpg)
 
-## Release History
+1. The Register page allows users to choose and enter a player name. captured usernames are displayed on the game screen personalizing users' engagement on the site.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![screenshot of the game area](assets/images/game area.jpg)
+2. The game is a simple quiz game where the player is asked a question and feedback is inputted using the three option keys. Player's answers are displayed in the middle. a question score counter is visible to the player and on selecting the 'NEXT' key feedback of score, question left and if the player got the question correct is giving. 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![screenshot of the game area trivia card](assets/images/Trivia card.jpg)
+3. A trivia card with fun facts is hidden behind the game area and each click offers a random message.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Features Left to Implement
+the following feature are missing from the site and i would love to implement them in the future.
+1. Color coding for wrong and right answers. Green = correct answers. Red = wrong answers.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+2. navigation link to other mini games example a link to a maths game or trivia game.
+ 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Testing:
+I tested that the page works in different browsers Chrome, Mozilla Firefox and Microsoft edge 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+I have confirmed that all links work perfectly and all navigation elements are easy to read and understand.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+Responsiveness test on each web browser was done using the developer device tool bar.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Bugs: 
+none found.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Validator Testing 
+**HTML**
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+No errors were returned when each html page was passed through the official W3C validator.
+![Report](assets/images/HTML Validation Quiz Me.jpg)
+![Report](assets/images/HTML Validation Quiz Me2.jpg)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+**CSS**
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+No errors were returned when the css stylesheet was passed through the official (jigsaw) validator.
+![Report](assets/images/W3C CSS Validation Quiz Me.jpg)
 
-------
+No warnings returned when the javascript was passed through the JSHint JavaScript Validator
 
-## FAQ about the uptime script
+**Accessibility**
 
-**Why have you added this script?**
+Accessibility testing was conducted using light house devtools and it confirmed that the fonts and colors selected are easy to read and accecssible.
+![screenshot of lighthouse test score](assets/images/lighthouse score.jpg)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+**Unfixed bugs:** 
 
-**How will this affect me?**
+none
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## Deployment 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+The site was deployed to github pages using the following steps:
+1.	In the github repository click on the setting tab 
+2.	Navigate to the github pages section and click on the dedicated pages tab
+3.	On the source tab select main and save
+4.	Once the branch main is saved the page displays a link to the website.
+5.	Refresh the browser and a: _Your site is published at_ display with the site link appears. 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+The live site can be found here [QUIZ ME]( https://samuelukachukwu.github.io/quiz-me/)
 
-**So….?**
+## Credits
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Media
 
-**Can I opt out?**
+Images used in the website:
+images used in the site are from (https://pixabay.com/)
+*  [StockSnap](https://pixabay.com/photos/kid-people-girl-child-sitting-2603857/)
+*	[Prawny](https://pixabay.com/users/prawny-162579/)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Content
 
-**Anything more?**
+* Site triva facts are from [goodto](https://www.goodto.com/family/facts-for-kids-5446)
+* Social buttons and Lotus image in header are from [Font Awesome](https://fontawesome.com/)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Inserted Codes
 
----
+* Fisher-Yates Code for Random Array Shuffle.
 
-Happy coding!
+ * [Shawn Steward](https://stackoverflow.com/users/186116/shawn-steward) for codes in radio button reset.
+
+
+
+
+
+
+
+
+
+
+
+
