@@ -159,28 +159,32 @@ function playerChoice() {
 
 // function to check player answer and data base answer while scoring and counting down questions 
 
-function scorePlayer(){
+function scorePlayer() {
     let selected = document.querySelector("input[name='answer']:checked").value;
     let displayAnswer = document.getElementById('answer');
-        if (selected === 'A' && quiz[0].choices.a === true) {
-            displayAnswer.innerText = 'Briliant!';
-            console.log(selected);
-            scoreCount()
-            shuffleQuestion();
-        } else if (selected === 'B' && quiz[0].choices.b === true){
-            displayAnswer.innerText = 'Briliant!';
-            console.log(selected);
-            scoreCount()
-            shuffleQuestion();
-        }else if (selected === 'C' && quiz[0].choices.c === true) {
-            displayAnswer.innerText = 'Briliant!';
-            console.log(selected);
-            scoreCount()
-            shuffleQuestion();
-        }else {
-            displayAnswer.innerText = 'wrong!';
-            shuffleQuestion();
-        }
+    if (selected === 'A' && quiz[0].choices.a === true) {
+        displayAnswer.innerText = 'Briliant!';
+        console.log(selected);
+        scoreCount()
+        countQuestion()
+        shuffleQuestion();
+    } else if (selected === 'B' && quiz[0].choices.b === true) {
+        displayAnswer.innerText = 'Briliant!';
+        console.log(selected);
+        scoreCount()
+        countQuestion()
+        shuffleQuestion();
+    } else if (selected === 'C' && quiz[0].choices.c === true) {
+        displayAnswer.innerText = 'Briliant!';
+        console.log(selected);
+        scoreCount()
+        countQuestion()
+        shuffleQuestion();
+    } else {
+        displayAnswer.innerText = 'wrong!';
+        countQuestion()
+        shuffleQuestion();
+    }
 }
 // function to count score 
 function scoreCount() {
@@ -189,6 +193,33 @@ function scoreCount() {
         ++value
     console.log(value);
     document.getElementById('score-numb').innerHTML = value;
+    return value
 }
 
 // function to decrease question count
+function countQuestion() {
+    let questionLeft = document.getElementById('question-numb');
+    let valueQ = questionLeft.innerHTML
+        --valueQ
+    console.log(valueQ);
+    document.getElementById('question-numb').innerHTML = valueQ;
+
+    if (valueQ == 0) {
+        let finalScore = document.querySelector('#overlay-bottom');
+        finalScore.classList.remove('overlay-hidden');
+        let score = document.getElementById('score-numb');
+        let finalScoreText = document.getElementById('score-display-txt');
+        finalScoreText.innerText = score.innerText;
+    }
+}
+
+// replay game 
+function replayQuiz() {
+    let startReplay = document.querySelector('#overlay-bottom');
+    startReplay.classList.add('overlay-hidden');
+    shuffleQuestion();
+    let score = document.getElementById('score-numb');
+    score.innerText = 0;
+    let questionResetCount = document.getElementById('question-numb');
+    questionResetCount.innerText = 15;
+}
