@@ -12,7 +12,9 @@ body {
     background-color: #040504;
     color: #fff;
 }
-
+a{
+    text-decoration: none;
+}
 .font-one {
     font-family: 'Luckiest Guy', cursive;
 }
@@ -169,7 +171,9 @@ body {
     text-transform: uppercase;
     padding-right: 25px;
 }
-
+.info-area{
+    text-align: center;
+}
 .flip-card {
     width: 95%;
     display: flex;

@@ -1,5 +1,5 @@
 let quiz = [{
-        question: 'What is the next number after 9?  a): 8. b): 10. c): 11',
+        question: `<p>What is the next number after 9? <br> a): 8.  b): 10.  c): 11 </p>`,
         choices: {
             a: false,
             b: true,
@@ -7,7 +7,7 @@ let quiz = [{
         }
     },
     {
-        question: 'What color is a banana? a): blue. b): yellow. c): pink',
+        question: `<p>What color is a banana? <br> a): blue. b): yellow. c): pink</p>`,
         choices: {
             a: false,
             b: true,
@@ -15,7 +15,7 @@ let quiz = [{
         }
     },
     {
-        question: 'Take 4 away from 10? a): 7. b): 9. c): 6.',
+        question: `<p>Take 4 away from 10? <br> a): 7. b): 9. c): 6.</p>`,
         choices: {
             a: false,
             b: false,
@@ -23,7 +23,7 @@ let quiz = [{
         }
     },
     {
-        question: 'The day after Monday is...?  a): Teusday. b): Sunday. c): Wednesday',
+        question: `<p>The day after Monday is...? <br>  a): Teusday. b): Sunday. c): Wednesday</p>`,
         choices: {
             a: true,
             b: false,
@@ -31,7 +31,7 @@ let quiz = [{
         }
     },
     {
-        question: 'Which is longer a Car or a skeateboard?  a): Skateboard. b): None. c): Car',
+        question: `<p>Which is longer a Car or a skeateboard? <br> a): Skateboard. b): None. c): Car</p>`,
         choices: {
             a: false,
             b: false,
@@ -39,7 +39,7 @@ let quiz = [{
         }
     },
     {
-        question: 'Counting up from 40, what number comes next?  a): 45. b): 41. c): 39',
+        question: `<p>Counting up from 40, what number comes next? <br> a): 45. b): 41. c): 39</p>`,
         choices: {
             a: false,
             b: true,
@@ -47,7 +47,7 @@ let quiz = [{
         }
     },
     {
-        question: 'How many Months are there in a year?  a): 9. b): 10. c): 12',
+        question: `<p>How many Months are there in a year? <br>  a): 9. b): 10. c): 12</p>`,
         choices: {
             a: false,
             b: false,
@@ -55,7 +55,7 @@ let quiz = [{
         }
     },
     {
-        question: 'Seventh Letter of the Alphabet?  a): G. b): R. c): F',
+        question: `<p>Seventh Letter of the Alphabet? <br> a): G. b): R. c): F</p>`,
         choices: {
             a: true,
             b: false,
@@ -101,6 +101,36 @@ let trivia = [{
     }
 ]
 
+let color = [{
+        colorsA: '#012340',
+        colorsB: '#03A678'
+    },
+    {
+        colorsA: '#025939',
+        colorsB: '#F27405'
+    },
+    {
+        colorsA: '#027333',
+        colorsB: '#870D0D'
+    },
+    {
+        colorsA: '#03A63C',
+        colorsB: '#F2F2F2'
+    },
+    {
+        colorsA: '#04D939',
+        colorsB: '#25262C'
+    },
+    {
+        colorsA: '#014040',
+        colorsB: '#2A2A2A'
+    },
+    {
+        colorsA: '#02735E',
+        colorsB: '#260401'
+    }
+];
+
 document.addEventListener('DOMContentLoaded', function () {
     let playGame = document.getElementById('playbtn');
     playGame.addEventListener('click', startQuiz);
@@ -123,7 +153,7 @@ function startQuiz() {
         overlaytop.classList.add('overlay-hidden');
         usernameBase.push(username.value)
     }
-    userTag.innerHTML = `<p> Go ${username.value}!</p>`;
+    userTag.innerHTML = `<p>${username.value}!</p>`;
     shuffleQuestion();
 }
 
@@ -136,7 +166,7 @@ function shuffleQuestion() {
         quiz[j] = k
     }
     let questions = document.getElementById('questions');
-    questions.innerText = quiz[0].question;
+    questions.innerHTML = quiz[0].question;
     console.log(quiz[0].choices.a);
     console.log(quiz[0].question);
 }
@@ -163,31 +193,39 @@ function scorePlayer() {
     let selected = document.querySelector("input[name='answer']:checked").value;
     let displayAnswer = document.getElementById('answer');
     if (selected === 'A' && quiz[0].choices.a === true) {
+        showText()
         displayAnswer.innerText = 'Briliant!';
         console.log(selected);
         scoreCount()
         countQuestion()
         shuffleQuestion()
         scrubRadiobuttons();
+        setTimeout("removeText()", 5000);
     } else if (selected === 'B' && quiz[0].choices.b === true) {
+        showText()
         displayAnswer.innerText = 'Briliant!';
         console.log(selected);
         scoreCount()
         countQuestion()
         shuffleQuestion();
         scrubRadiobuttons()
+        setTimeout("removeText()", 5000);
     } else if (selected === 'C' && quiz[0].choices.c === true) {
+        showText()
         displayAnswer.innerText = 'Briliant!';
         console.log(selected);
         scoreCount()
         countQuestion()
         shuffleQuestion();
         scrubRadiobuttons()
+        setTimeout("removeText()", 5000);
     } else {
+        showText()
         displayAnswer.innerText = 'wrong!';
         countQuestion()
         shuffleQuestion();
         scrubRadiobuttons();
+        setTimeout("removeText()", 5000);
     }
 }
 // function to count score 
@@ -226,6 +264,7 @@ function replayQuiz() {
     score.innerText = 0;
     let questionResetCount = document.getElementById('question-numb');
     questionResetCount.innerText = 15;
+    changeColor();
 }
 
 function scrubRadiobuttons() {
@@ -260,5 +299,21 @@ function unflipCard() {
     // card flips back displaying question area
     let triviaCard = document.getElementById('card-box');
     triviaCard.classList.remove("flip");
+}
 
+// change overlay color
+function changeColor() {
+    // let overlayChangeOne = document.getElementById('overlay-top');
+    let overlayChangeTwo = document.getElementById('overlay-bottom');
+    let colorIndex = (Math.floor(Math.random() * 5));
+    // overlayChangeOne.style.background = "radial-gradient(" + color[colorIndex].colorsA + ", " + color[colorIndex].colorsB + ")";
+    overlayChangeTwo.style.background = "radial-gradient(" + color[colorIndex + 1].colorsA + ", " + color[colorIndex + 1].colorsB + ")";
+}
+
+function removeText() {
+    document.getElementById('answer').style.visibility = "hidden"
+}
+
+function showText() {
+    document.getElementById('answer').style.visibility = "visible"
 }
