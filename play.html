@@ -8,7 +8,6 @@
     <meta name="description" content="quiz me app for kids with fun trivia ballinasloe ireland">
     <meta name="keywords" content="quiz, kids game, learning app, ">
     <meta name="author" content="Samuel Ukachukwu">
-    <link rel="icon" href="assets/images/logo.png">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Quiz Me</title>
 </head>
@@ -22,15 +21,16 @@
             </a>
         </div>
         <div id="hero-title">
-            <a href="index.html"><h1 id="title">Quiz Me!</h1></a>
+            <a href="index.html">
+                <h1 id="title">Quiz Me!</h1>
+            </a>
         </div>
     </header>
     <div class="main-container">
         <div id="overlay-top" class="overlay-visible  overlay-start">
             <div class="username-box font-one">
-                <label for="username">
-                    <h2 id="overlay-header-txt">Welcome!</h2>
-                </label><br>
+                <h2 id="overlay-header-txt">Welcome!</h2>
+                <br>
                 <input id="username" class="font-one" type="text" name="username" placeholder="PlayerOne...">
             </div>
             <div class="font-two">
@@ -76,23 +76,11 @@
         <div class="choice-box">
             <div class="form-two">
                 <input type="radio" id="choice-a" class="hidebtn" name="answer" value="A">
-                <label for="choice-a" class="label-tags">
-                    <div class="roundbtn">
-                        <p>A</p>
-                    </div>
-                </label>
+                <label for="choice-a" class="label-tags roundbtn">A</label>
                 <input type="radio" id="choice-b" class="hidebtn" name="answer" value="B">
-                <label for="choice-b" class="label-tags">
-                    <div class="roundbtn">
-                        <p>B</p>
-                    </div>
-                </label>
+                <label for="choice-b" class="label-tags roundbtn">B</label>
                 <input type="radio" id="choice-c" class="hidebtn" name="answer" value="C">
-                <label for="choice-c" class="label-tags">
-                    <div class="roundbtn">
-                        <p>C</p>
-                    </div>
-                </label>
+                <label for="choice-c" class="label-tags roundbtn">C</label>
             </div>
             <div class="score-counter">
                 <p>Q: <span id="question-numb">15</span></p>
