@@ -102,32 +102,36 @@ let trivia = [{
 ]
 
 let color = [{
-        colorsA: '#012340',
-        colorsB: '#03A678'
+        colorsA: '#D90479',
+        colorsB: '#F2B705'
     },
     {
-        colorsA: '#025939',
-        colorsB: '#F27405'
+        colorsA: '#F2CB05',
+        colorsB: '##F2CCB6'
     },
     {
-        colorsA: '#027333',
-        colorsB: '#870D0D'
+        colorsA: '#F2622E',
+        colorsB: '#8C170D'
     },
     {
-        colorsA: '#03A63C',
-        colorsB: '#F2F2F2'
+        colorsA: '#F2B680',
+        colorsB: '#F2785C'
     },
     {
         colorsA: '#04D939',
         colorsB: '#25262C'
     },
     {
-        colorsA: '#014040',
-        colorsB: '#2A2A2A'
+        colorsA: '#6DB4F2',
+        colorsB: '#335AA6'
     },
     {
-        colorsA: '#02735E',
-        colorsB: '#260401'
+        colorsA: '#29A330',
+        colorsB: '#48F052'
+    },
+    {
+        colorsA: '#2487F0',
+        colorsB: '#324961'
     }
 ];
 
@@ -145,7 +149,6 @@ let userTag = document.getElementById('username-tag')
 
 function startQuiz() {
     if (username.value === '' || username.value == null) {
-        console.log('user name is empty');
         message.innerText = `Please Select A UserName`;
     } else if (usernameBase.includes(username.value)) {
         message.innerText = `The Username "${username.value}" Has Been Taken`;
@@ -167,23 +170,18 @@ function shuffleQuestion() {
     }
     let questions = document.getElementById('questions');
     questions.innerHTML = quiz[0].question;
-    console.log(quiz[0].choices.a);
-    console.log(quiz[0].question);
 }
 
 // function to display users answer
 
 let radioBottons = document.querySelectorAll("input[name='answer']");
-console.log(radioBottons)
 for (i = 0; i < radioBottons.length; i++) {
-    console.log(radioBottons[i]);
-    radioBottons[i].addEventListener("change", playerChoice)
+    radioBottons[i].addEventListener("change", playerChoice);
 }
 
 function playerChoice() {
-    let choiceDisplay = document.getElementById('user-choice')
+    let choiceDisplay = document.getElementById('user-choice');
     let selected = document.querySelector("input[name='answer']:checked").value;
-    console.log(selected);
     choiceDisplay.innerText = selected;
 }
 
@@ -194,38 +192,35 @@ function scorePlayer() {
     let displayAnswer = document.getElementById('answer');
     if (selected === 'A' && quiz[0].choices.a === true) {
         showText()
-        displayAnswer.innerText = 'Briliant!';
-        console.log(selected);
-        scoreCount()
-        countQuestion()
-        shuffleQuestion()
+        displayAnswer.innerText = 'Briliant! Keep it up!';
+        scoreCount();
+        countQuestion();
+        shuffleQuestion();
         scrubRadiobuttons();
-        setTimeout("removeText()", 5000);
+        setTimeout("removeText()", 3000);
     } else if (selected === 'B' && quiz[0].choices.b === true) {
-        showText()
-        displayAnswer.innerText = 'Briliant!';
-        console.log(selected);
-        scoreCount()
-        countQuestion()
-        shuffleQuestion();
-        scrubRadiobuttons()
-        setTimeout("removeText()", 5000);
-    } else if (selected === 'C' && quiz[0].choices.c === true) {
-        showText()
-        displayAnswer.innerText = 'Briliant!';
-        console.log(selected);
-        scoreCount()
-        countQuestion()
-        shuffleQuestion();
-        scrubRadiobuttons()
-        setTimeout("removeText()", 5000);
-    } else {
-        showText()
-        displayAnswer.innerText = 'wrong!';
-        countQuestion()
+        showText();
+        displayAnswer.innerText = 'Briliant! Keep it up!';
+        scoreCount();
+        countQuestion();
         shuffleQuestion();
         scrubRadiobuttons();
-        setTimeout("removeText()", 5000);
+        setTimeout("removeText()", 3000);
+    } else if (selected === 'C' && quiz[0].choices.c === true) {
+        showText();
+        displayAnswer.innerText = 'Briliant! Keep it up!';
+        scoreCount();
+        countQuestion();
+        shuffleQuestion();
+        scrubRadiobuttons();
+        setTimeout("removeText()", 3000);
+    } else {
+        showText();
+        displayAnswer.innerText = "wrong! You'll get it next time";
+        countQuestion();
+        shuffleQuestion();
+        scrubRadiobuttons();
+        setTimeout("removeText()", 3000);
     }
 }
 // function to count score 
@@ -233,7 +228,6 @@ function scoreCount() {
     let score = document.getElementById('score-numb');
     let value = score.innerHTML
         ++value
-    console.log(value);
     document.getElementById('score-numb').innerHTML = value;
     return value
 }
@@ -243,7 +237,6 @@ function countQuestion() {
     let questionLeft = document.getElementById('question-numb');
     let valueQ = questionLeft.innerHTML
         --valueQ
-    console.log(valueQ);
     document.getElementById('question-numb').innerHTML = valueQ;
 
     if (valueQ == 0) {
@@ -292,7 +285,6 @@ function displayTrivia() {
     // trivia is displayed on inner text
     let triviamessage = document.getElementById('new-trivia');
     triviamessage.innerText = trivia[0].facts;
-    console.log(trivia[0].facts);
 }
 
 function unflipCard() {
@@ -303,11 +295,9 @@ function unflipCard() {
 
 // change overlay color
 function changeColor() {
-    // let overlayChangeOne = document.getElementById('overlay-top');
     let overlayChangeTwo = document.getElementById('overlay-bottom');
     let colorIndex = (Math.floor(Math.random() * 5));
-    // overlayChangeOne.style.background = "radial-gradient(" + color[colorIndex].colorsA + ", " + color[colorIndex].colorsB + ")";
-    overlayChangeTwo.style.background = "radial-gradient(" + color[colorIndex + 1].colorsA + ", " + color[colorIndex + 1].colorsB + ")";
+    overlayChangeTwo.style.background = "radial-gradient(" + color[colorIndex].colorsA + ", " + color[colorIndex].colorsB + ")";
 }
 
 function removeText() {
