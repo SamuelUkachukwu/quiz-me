@@ -5,7 +5,7 @@
 
 ## 
 
-The QUIZ ME is an application designed to give kids an educative moment of fun answering daily to random question and also it offers informative facts on trivial issues around the world. it is designed with the age bracket of 7 years and up wards but adults are sure to find it engaging too.  
+The QUIZ ME is an application designed to give kids an educative moment of fun answering questions in a random fashion and also it offers informative trivia card with random "Do you know..." facts from around the world. it is designed with the age bracket of 7 years and up wards but adults are sure to find it engaging too.  
 
 users of the app are requested to create a user name and engage in answering 15 random questions receiving a score at the end of the session.
 
@@ -105,6 +105,7 @@ images used in the site are from (https://pixabay.com/)
 ### Content
 
 * Site triva facts are from [goodto](https://www.goodto.com/family/facts-for-kids-5446)
+* questions from [funquizzes](https://www.funquizzes.uk/kids-quiz-questions/)
 * Social buttons and Lotus image in header are from [Font Awesome](https://fontawesome.com/)
 
 ### Inserted Codes

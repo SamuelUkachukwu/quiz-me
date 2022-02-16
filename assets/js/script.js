@@ -100,8 +100,8 @@ let quiz = [{
     {
         question: `<p> What is a baby goat called? <br> a): Kid . b):Chick .  c): Calf  </p>`,
         choices: {
-            a: false,
-            b: true,
+            a: true,
+            b: false,
             c: false
         }
 
