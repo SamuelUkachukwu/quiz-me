@@ -61,8 +61,89 @@ let quiz = [{
             b: false,
             c: false
         }
+    },
+    {
+        question: `<p> How many pockets does a snooker table have? <br> a): 7 . b): 6.  c): 5. </p>`,
+        choices: {
+            a: false,
+            b: true,
+            c: false
+        }
+    },
+    {
+        question: `<p> On which continent is India located? <br> a):Asia . b):Africa .  c): South America </p>`,
+        choices: {
+            a: true,
+            b: false,
+            c: false
+        }
+
+    },
+    {
+        question: `<p> Which fairy tale character slept for 100 years? <br> a): Snow White.  b): Cinderella.  c): Sleeping Beauty </p>`,
+        choices: {
+            a: false,
+            b: false,
+            c: true
+        }
+
+    },
+    {
+        question: `<p> What is the name of the organ that pumps blood around the body? <br> a): Lungs . b): Heart .  c): Stomach.  </p>`,
+        choices: {
+            a: false,
+            b: true,
+            c: false
+        }
+
+    },
+    {
+        question: `<p> What is a baby goat called? <br> a): Kid . b):Chick .  c): Calf  </p>`,
+        choices: {
+            a: false,
+            b: true,
+            c: false
+        }
+
+    },
+    {
+        question: `<p> How many days are there in June? <br> a): 28.  b): 31.  c): 30. </p>`,
+        choices: {
+            a: false,
+            b: false,
+            c: true
+        }
+
+    },
+    {
+        question: `<p> What is the third planet from the sun? <br> a): Mars. b): Venus.  c): Earth.  </p>`,
+        choices: {
+            a: false,
+            b: false,
+            c: true
+        }
+
+    },
+    {
+        question: `<p> In which sport was Muhammad Ali a world champion? <br> a): Boxing. b): Football.  c): Baseball </p>`,
+        choices: {
+            a: true,
+            b: false,
+            c: false
+        }
+
+    },
+    {
+        question: `<p> Can an ostrich fly? <br> a): Yes. b): No.  c): May be.  </p>`,
+        choices: {
+            a: false,
+            b: true,
+            c: false
+        }
+
     }
 ];
+
 let trivia = [{
         facts: "A jar of Nutella sells every 2.5 seconds."
     },
