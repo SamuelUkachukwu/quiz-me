@@ -10,13 +10,14 @@ The QUIZ ME is an application designed to give kids an educative moment of fun a
 users of the app are requested to create a user name and engage in answering 15 random questions receiving a score at the end of the session.
 
 
-![responsive design of the website from ami.responsive.com](assets/images/responsive test.jpg)
+![responsive design of the website from ami.responsive.com](assets/images/responsive-test.jpg)
 
 
 ## Features:
 
 **Navigation:**
-![screenshot of navigation page](assets/images/homepage and navigation.jpg)
+
+![screenshot of navigation page](assets/images/homepage-and-navigation.jpg)
 
 
 1.	the site is designed to be as simple as possible as the target users age bracket would allow. images with links to refresh the page back to the home page serves as the navigation. 
@@ -28,15 +29,15 @@ users of the app are requested to create a user name and engage in answering 15 
 links open in new browser tabs.
 
  **Game Area:**
-![screenshot of the Game Area](assets/images/ready page.jpg)
+![screenshot of the Game Area](assets/images/ready-page.jpg)
 
 1. The Register page allows users to choose and enter a player name. captured usernames are displayed on the game screen personalizing users' engagement on the site.
 
 
-![screenshot of the game area](assets/images/game area.jpg)
+![screenshot of the game area](assets/images/game-area.jpg)
 2. The game is a simple quiz game where the player is asked a question and feedback is inputted using the three option keys. Player's answers are displayed in the middle. a question score counter is visible to the player and on selecting the 'NEXT' key feedback of score, question left and if the player got the question correct is giving. 
 
-![screenshot of the game area trivia card](assets/images/Trivia card.jpg)
+![screenshot of the game area trivia card](assets/images/Trivia-card.jpg)
 3. A trivia card with fun facts is hidden behind the game area and each click offers a random message.
 
 ## Features Left to Implement
@@ -62,20 +63,20 @@ none found.
 **HTML**
 
 No errors were returned when each html page was passed through the official W3C validator.
-![Report](assets/images/HTML Validation Quiz Me.jpg)
-![Report](assets/images/HTML Validation Quiz Me2.jpg)
+![Report](assets/images/HTML-Validation-Quiz-Me.jpg)
+![Report](assets/images/HTML-Validation-Quiz-Me2.jpg)
 
 **CSS**
 
 No errors were returned when the css stylesheet was passed through the official (jigsaw) validator.
-![Report](assets/images/W3C CSS Validation Quiz Me.jpg)
+![Report](assets/images/W3C-CSS-Validation-Quiz-Me.jpg)
 
 No warnings returned when the javascript was passed through the JSHint JavaScript Validator
 
 **Accessibility**
 
 Accessibility testing was conducted using light house devtools and it confirmed that the fonts and colors selected are easy to read and accecssible.
-![screenshot of lighthouse test score](assets/images/lighthouse score.jpg)
+![screenshot of lighthouse test score](assets/images/lighthouse-score.jpg)
 
 **Unfixed bugs:** 
 
