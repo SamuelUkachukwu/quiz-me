@@ -35,7 +35,7 @@ links open in new browser tabs.
 
 
 ![screenshot of the game area](assets/images/game-area.jpg)
-2. The game is a simple quiz game where the player is asked a question and feedback is inputted using the three option keys. Player's answers are displayed in the middle. a question score counter is visible to the player and on selecting the 'NEXT' key feedback of score, question left and if the player got the question correct is giving. 
+2. The game is a simple quiz game where the player is asked a question and feedback is inputted using the three option keys. Player's answers are displayed in the middle. a question score counter is visible to the player and on selecting the 'NEXT' key, feedback of score, question left and if the player got the question correct is giving. 
 
 ![screenshot of the game area trivia card](assets/images/Trivia-card.jpg)
 3. A trivia card with fun facts is hidden behind the game area and each click offers a random message.
@@ -44,7 +44,7 @@ links open in new browser tabs.
 the following feature are missing from the site and i would love to implement them in the future.
 1. Color coding for wrong and right answers. Green = correct answers. Red = wrong answers.
 
-2. navigation link to other mini games example a link to a maths game or trivia game.
+2. navigation link to other mini games. Example: a link to a Maths game or Trivia game.
  
 
 ## Testing:
