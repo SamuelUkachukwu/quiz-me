@@ -15,9 +15,9 @@ users of the app are requested to create a user name and engage in answering 15 
 
 ## Features:
 
-**Navigation:**
+<!-- **Navigation:**
 
-![screenshot of navigation page](assets/images/homepage-and-navigation.jpg)
+![screenshot of navigation page](assets/images/homepage-and-navigation.webp)
 
 
 1.	the site is designed to be as simple as possible as the target users age bracket would allow. images with links to refresh the page back to the home page serves as the navigation. 
@@ -26,38 +26,91 @@ users of the app are requested to create a user name and engage in answering 15 
 
 3. The hero image is a static background image well suited for the dark theme of the site and allow users much sight friendly screen time.   
 4. Below the play button is the footer and offers site users a link to the social media pages and more exploration.
-links open in new browser tabs.
+links open in new browser tabs. -->
 
- **Game Area:**
-![screenshot of the Game Area](assets/images/ready-page.jpg)
+### 🎮 Game Mechanics
 
-1. The Register page allows users to choose and enter a player name. captured usernames are displayed on the game screen personalizing users' engagement on the site.
+- **Difficulty Levels**:
+  - **Beginner**: 15 questions (10 easy, 3 medium, 2 hard)
+  - **Intermediate**: 20 questions (5 easy, 10 medium, 5 hard)
+  - **Advanced**: 30 questions (5 easy, 10 medium, 15 hard)
 
+- **Question Shuffling**:
+  - Uses Fisher-Yates Shuffle to randomize both questions and option order for each session.
 
-![screenshot of the game area](assets/images/game-area.jpg)
-2. The game is a simple quiz game where the player is asked a question and feedback is inputted using the three option keys. Player's answers are displayed in the middle. a question score counter is visible to the player and on selecting the 'NEXT' key, feedback of score, question left and if the player got the question correct is giving. 
+- **Block Grid**:
+  - 50 clickable blocks are rendered.
+  - Randomly assigned blocks contain quiz questions.
+  - Block color indicates difficulty:
+    - 🟢 Green: Easy
+    - 🟠 Orange: Medium
+    - 🔴 Red: Hard
 
-![screenshot of the game area trivia card](assets/images/Trivia-card.jpg)
-3. A trivia card with fun facts is hidden behind the game area and each click offers a random message.
+- **Question Modal**:
+  - Opens on clicking a question block.
+  - Displays one question with shuffled options.
+  - Users choose one answer and submit.
+
+- **Live Scoreboard**:
+  - Score updates after each question.
+  - Displays final score once all questions are completed.
+
+- **Reset Button**:
+  - Resets the entire game state: difficulty, score, and questions.
+
+### ✨ Visual Feedback
+
+- **Confetti Animation**:
+  - On answering, animated message and sparkles show correctness.
+  - `Correct!` or `Incorrect!` message with glowing effect.
+
+- **Final Score Modal**:
+  - Displays final score in animated format.
+  - Includes a reset button to restart the quiz.
+
+---
+
+## Screenshots
+
+### Home & Navigation
+![Homepage](assets/images/homepage-and-navigation.webp)
+
+### Register & Ready Page
+![Game Area before difficulty selection](assets/images/game-area-before.webp)
+
+### Game Area
+![Game Area after difficulty selection](assets/images/game-area-after.webp)
+
+### Trivia Card (Optional Future Feature)
+![Trivia Card](assets/images/Trivia-card.webp)
 
 ## Features Left to Implement
 the following feature are missing from the site and i would love to implement them in the future.
-1. Color coding for wrong and right answers. Green = correct answers. Red = wrong answers.
 
-2. navigation link to other mini games. Example: a link to a Maths game or Trivia game.
+- [ ] Sound effects for correct and incorrect answers.
+- [ ] Trivia card feature re-integration after each question.
+- [ ] Additional mini-games (e.g., Math Quiz, Spelling Game).
+- [ ] Accessibility enhancements (keyboard navigation, screen reader labels).
  
 
-## Testing:
-I tested that the page works in different browsers Chrome, Mozilla Firefox and Microsoft edge 
+## Testing
 
-I have confirmed that all links work perfectly and all navigation elements are easy to read and understand.
+- ✅ Tested on:
+  - Google Chrome
+  - Mozilla Firefox
+  - Microsoft Edge
 
-Responsiveness test on each web browser was done using the developer device tool bar.
+- ✅ All buttons, form inputs, and blocks tested for functionality.
+- ✅ Responsive layout tested using browser developer tools and [ami.responsivedesign.is](https://ami.responsivedesign.is).
 
+---
 
+## Bugs
 
-## Bugs: 
-none found.
+- No major bugs found.
+
+---
+
 
 ## Validator Testing 
 **HTML**
@@ -71,12 +124,12 @@ No errors were returned when each html page was passed through the official W3C 
 No errors were returned when the css stylesheet was passed through the official (jigsaw) validator.
 ![Report](assets/images/W3C-CSS-Validation-Quiz-Me.jpg)
 
-No warnings returned when the javascript was passed through the JSHint JavaScript Validator
+No warnings returned when the javascript was passed through the JSHint JavaScript Validator [JSHint](https://jshint.com/)
 
 **Accessibility**
 
-Accessibility testing was conducted using light house devtools and it confirmed that the fonts and colors selected are easy to read and accecssible.
-![screenshot of lighthouse test score](assets/images/lighthouse-score.jpg)
+Accessibility testing was conducted using light house devtools and it confirmed that the fonts and colors selected are easy to read and accessible.
+![screenshot of lighthouse test score](assets/images/lighthouse-score.webp)
 
 **Unfixed bugs:** 
 
@@ -115,6 +168,13 @@ images used in the site are from (https://pixabay.com/)
 
  * [Shawn Steward](https://stackoverflow.com/users/186116/shawn-steward) for codes in radio button reset.
 
+---
+
+## Summary
+
+**QUIZ ME** has evolved into a full-featured quiz app with interactive visuals, adaptive difficulty, and engaging animations. It’s educational, accessible, and perfect for casual learning.
+
+> “Learning should never be boring—QUIZ ME proves it can be fun!”
 
 
 

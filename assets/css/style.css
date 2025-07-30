@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Luckiest+Guy&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -6,406 +6,574 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-invert-white: #0c0c0c;
+    --color-dark-gray: rgba(255, 255, 255, 0.8);
+
+    --color-text: #ffffff;
+
+    --button-bg: #1E1E1E;
+    --button-text: #FFD310;
+    --button-bg-hover: #2A2A2A;
+}
+
+.dark {
+    --color-invert-white: #f7f6f6;
+    --color-dark-gray: rgba(0, 0, 0, 1);
+
+    --color-text: #0c0c0c;
+
+    --button-bg: #FFD310;
+    --button-text: #1E1E1E;
+    --button-bg-hover: #FFE657;
+}
+
+.logo {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(255, 211, 16);
+    text-shadow: 2px 2px 3px #000;
+}
+
+.nav-logo {
+    width: 100px;
+    height: 60px;
+}
+
+html,
 body {
-    background: url(../images/hero-image.jpg) no-repeat center center;
-    background-size: cover;
-    background-color: #040504;
-    color: #fff;
-}
-
-a {
-    text-decoration: none;
-}
-
-.font-one {
-    font-family: 'Luckiest Guy', cursive;
-}
-
-.font-two {
-    font-family: 'Reggae One', cursive;
-}
-
-#header {
-    line-height: 75px;
-    position: relative;
-}
-
-#logo-box {
-    position: absolute;
-    width: 25%;
-    top: 10px;
-    left: 20px;
-    z-index: 1;
-}
-
-#logo {
-    width: 100%;
-    padding: 20px;
-}
-
-#logo:hover {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-}
-
-#hero-title {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 6s ease-in-out;
-}
-
-#title {
-    margin-top: 10px;
-    font-size: 3rem;
-    font-family: 'Luckiest Guy', cursive;
-    letter-spacing: 5px;
-    text-shadow: 1px 1px 2px #000, 0 0 25px #3901FF, 0 0 5px #210099;
-    color: #FFF7F8;
-    transition: .3s ease-out;
-}
-
-#title:hover {
-    transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    color: #fffe97;
-}
-
-.button-container {
-    width: 100%;
-    position: absolute;
-    bottom: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.main-container {
-    padding-top: 20px;
-    margin-top: 20px;
-}
-
-/* styling for the initial body content starts here */
-
-.username-box {
-    font-size: 1.7rem;
-}
-
-#username {
-    border: none;
-    border-radius: 5px;
-    border-bottom: 2px solid #000;
-    height: 40px;
-    padding: 10px;
-    background-color: #FFF7F8
-}
-
-#playbtn {
-    color: #fff;
-    letter-spacing: 4px;
-    font-size: 1.7rem;
-}
-
-.playquiz:hover {
-    text-shadow: 1px 1px 2px #000, 0 0 25px #3901FF, 0 0 5px #210099;
-    transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-
-}
-
-.playquiz {
-
-    transition: .3s ease-out;
-}
-
-.quiz-container {
-    clear: both;
-    width: 100%;
-    display: flex;
-}
-
-/* styling for the .quiz-container starts here */
-
-.card {
-    width: 80%;
-    height: 40vh;
-    border-radius: 5px;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: all 0.6s;
-    transition-timing-function: ease-in-out;
-    margin: 0 auto;
-}
-
-.trivia-box {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 20px;
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 16px;
-    color: black;
-    text-align: center;
-}
-
-.flip {
-    transform: rotateX(180deg);
-}
-
-.card-front {
-    width: 100%;
     height: 100%;
-    position: absolute;
-    background-image: linear-gradient(to bottom right, red, yellow);
-    border-radius: 5px;
-    backface-visibility: hidden;
-    padding: 10px;
-    box-shadow: 2px 2px 2px rgb(108, 108, 175);
+    width: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    color: #000;
+    height: 100svh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
 }
 
-#username-tag {
-    width: 100%;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: right;
-    text-transform: uppercase;
-    padding-right: 25px;
+.layout::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--color-white);
+    background-image: url("../images_new/hero.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
 }
 
-.info-area {
-    text-align: center;
+.dark .layout::after {
+    background-image: url("../images_new/hero_dark.webp");
 }
 
-.flip-card {
-    width: 95%;
+nav {
+    color: var(--color-invert-white);
+    padding: 1rem;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
+    padding-left: 2rem;
 }
 
-.fancy-btn {
-    font-size: 1.2rem;
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    cursor: pointer;
-}
+main {
+    flex: 1;
+    overflow-y: auto;
 
-#user-choice {
-    cursor: auto;
-}
-
-.card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    background-image: radial-gradient(#0CE8E5, #2487F0, #324961);
-    backface-visibility: hidden;
-    transform: rotateX(180deg);
-    box-shadow: 2px 2px 2px rgb(172, 172, 221);
-}
-
-.return-btn {
-    width: 95%;
-    position: absolute;
-    bottom: 20px;
-    text-align: left;
-    margin-left: 15px;
-}
-
-.choice-box {
-    width: 100%;
-    position: absolute;
-    bottom: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-
-.form-two {
-    font-size: 20px;
     display: flex;
     justify-content: center;
-    align-content: center;
     align-items: center;
-}
-
-.hidebtn {
-    display: none;
-}
-
-.label-tags {
-    color: #217C27;
-    font-size: 30px;
-    font-family: 'Luckiest Guy', cursive;
-    margin-right: 30px;
-    cursor: pointer;
-}
-
-.roundbtn {
-    width: 40px;
-    height: 40px;
-    border: 2px #fff solid;
-    border-radius: 50px;
-    background-color: #fffe97;
-    box-shadow: 1px 1px 2px #000, 0 0 25px #3901FF, 0 0 5px #210099;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    transition: .3s ease-out;
-}
-
-.roundbtn:hover {
-    transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    color: #17541B;
-}
-
-.score-counter {
-    font-family: 'Luckiest Guy', cursive;
-    margin-top: 20px;
-    letter-spacing: 2px;
-    font-size: 30px;
-}
-
-/* styling for overlay starts here */
-.overlay-visible {
-    width: 95%;
-    height: 95%;
-    position: fixed;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    margin: auto;
-    border-radius: 20px;
-    font-size: 1.7rem;
-    z-index: 100;
-}
-
-.overlay-start {
-    display: grid;
-    border: 2px solid #4b4b4b;
-    background-image: radial-gradient(#BAD94A, #839934, #424D1A);
-    text-align: center;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    align-content: space-evenly;
-}
-
-.overlay-replay {
-    background-image: radial-gradient(#F2CB05, #D90479);
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 1.2rem;
-}
-
-.overlay-hidden {
-    display: none;
-}
-
-#overlay-header-txt, #replay-score-txt{
-    text-shadow: 1px 1px 2px #000, 0 0 26px  #839934, 0 0 5px #424D1A;
-    letter-spacing: 2px;
-}
-
-.overlay-img-box {
-    width: 23%;
-    margin-right: 40px;
-}
-
-.overlay-img {
-    width: 100%;
-}
-
-.replay-btn-box {
-    text-align: center;
+    padding: 1rem;
 }
 
 footer {
-    width: 100%;
-    position: absolute;
-    bottom: 30px;
-    display: inline-block;
+    color: #ffffff;
+    padding: 1rem;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.social-menu {
+.home-footer {
+    justify-content: end;
+}
+
+/* nav contents */
+.menu {
     display: flex;
+    gap: 20px;
+    margin: 0;
     list-style: none;
-    transition: 3s;
 }
 
-.social-menu li a {
-    font-size: 150%;
+.menu li a {
+    font-size: 12px;
     text-decoration: none;
-    margin-right: 25px;
+    padding: 3px;
+    color: var(--color-invert-white);
+    text-shadow: 1px 2px 4px var(--color-dark-gray);
+}
+
+.menu li a:hover {
+    color: var(--color-orange-dark);
+}
+
+.footer .menu li a {
     color: #fff;
-    padding-bottom: 30px;
+    text-shadow: none;
 }
 
-.social-menu li a:hover {
-    color: #fffe97;
+/* main content */
+.hero_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 60%;
+    width: 80%;
 }
 
-/* media querry styling start here */
+.hero_title {
+    font-size: clamp(4rem, 10vw, 8rem);
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 211, 16);
+    text-shadow: 2px 2px 8px #000;
+    z-index: 6;
+}
 
-/* media screen for devices and screen size 950px  */
-@media screen and (max-width: 950px) {
-    .overlay-img-box {
-        width: 35%;
-        margin-right: 20px;
+.hero_cta {
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    animation: fadeInUp 1s ease-in-out 0.6s;
+    animation-fill-mode: both;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+}
 
+.hero_cta:hover {
+    background-color: var(--button-bg-hover);
+    box-shadow: 0 8px 20px #000;
+    transform: translateY(-2px);
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-/* media screen for devices and screen size 600px  */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.trivia {
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.1rem;
+    padding: 1rem;
+    background-color: var(--color-invert-white);
+    color: var(--color-text);
+    border-radius: 10px;
+}
+
+.trivia_title {
+    margin-top: 2rem;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    color: var(--color-invert-white);
+    text-shadow: 2px 2px 8px var(--color-dark-gray);
+}
+
+/* play game content  */
+.main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.difficulty-bar {
+    padding-bottom: 1rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.difficulty-bar label,
+.reset {
+    padding: 0.6rem 1.2rem;
+    background-color: #eee;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s ease;
+    user-select: none;
+    font-weight: bold;
+    font-family: "Fredoka", sans-serif;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.difficulty-bar label:hover,
+.reset:hover {
+    background-color: #93a6bb;
+}
+
+.difficulty-bar input[type="radio"] {
+    display: none;
+}
+
+.reset-bar {
+    padding-top: 30px;
+}
+
+.difficulty-bar input[type="radio"]:checked+label {
+    background-color: #6B2500;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.difficulty-bar input[type="radio"]:disabled+label {
+    background-color: #ccc;
+    color: #888;
+    cursor: not-allowed;
+    box-shadow: none;
+    opacity: 0.7;
+}
+
+.content-section {
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5 1fr);
+    gap: 5px;
+    background-color: #eee;
+    background-color: var(--color-bg-dark);
+}
+
+.block {
+    background-color: #f77c3e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.modal {
+    position: fixed;
+    display: none;
+    z-index: 999;
+    padding: 2rem;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    width: 400px;
+    max-width: 90%;
+    height: 80vh;
+    background-color: #e6b61a;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-container-top,
+#modal-options {
+    height: 50%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-options {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modal-options li {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    display: block;
+    background-color: rgb(255, 253, 253);
+    border-radius: 10px;
+}
+
+#modal-options li:last-child {
+    margin-bottom: 0;
+}
+
+#modal-options input[type="radio"] {
+    margin-right: 0.5rem;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background-color: green;
+    color: #fff;
+}
+
+.submit-btn:hover {
+    background-color: rgb(2, 95, 2);
+}
+
+/* game play changes */
+.has-question {
+    border: solid 2px #40003f;
+    cursor: pointer;
+}
+
+.no-questions {
+    background-color: transparent;
+    color: transparent;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.block.answered {
+    cursor: default;
+    border: 2px solid #ccc;
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.score-display {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-family: "Fredoka", sans-serif;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 600px) {
-    #logo-box {
-        display: none;
+    .difficulty-bar {
+        gap: 0.8rem;
     }
 
-    .card {
-        width: 90%;
+    footer {
+        font-size: 12px;
+    }
+}
+
+.grade {
+    font-family: "Luckiest Guy", cursive;
+    font-size: clamp(5rem, 10vw, 20rem);
+    color: rgb(255, 210, 10);
+    text-shadow: 2px 2px 3px #000;
+    animation: zoomFade 1.5s ease forwards;
+    letter-spacing: 4px;
+    opacity: 1;
+}
+
+@keyframes zoomFade {
+    0% {
+        transform: scale(0.1);
+        opacity: 1;
     }
 
-    .quiz-container {
-        top: 40%;
+    30% {
+        transform: scale(1);
+        opacity: 1;
     }
 
-    .choice-box {
-        bottom: 15%;
-        display: block;
-        text-align: center;
-        flex-direction: column;
+    60% {
+        transform: scale(1.8);
+        opacity: 0.6;
     }
 
-    .label-tags {
-        margin: 0 15px;
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grade {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+    }
+}
+
+.confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+    background: radial-gradient(circle at center, rgba(17, 17, 17, 0.7) 0%, rgba(0, 0, 0, 0.8) 80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, white 20%, transparent 80%);
+    border-radius: 50%;
+    opacity: 0;
+    animation: blinkFade 1.5s ease-out forwards;
+}
+
+@keyframes blinkFade {
+    0% {
+        transform: scale(0.2);
+        opacity: 0;
     }
 
-    .overlay-img-box {
-        margin-right: 10px;
+    30% {
+        transform: scale(1.4);
+        opacity: 1;
+    }
 
+    60% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+.fade-out {
+    animation: fadeOut 1.5s forwards;
+}
+
+@media screen and (max-width: 350px) {
+    .hero_title {
+        font-size: 3.5rem;
+    }
+
+    .difficulty-bar label,
+    .reset {
+        font-size: .7rem;
+    }
+}
+
+.final-modal {
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    width: 100svw;
+    height: 100svh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.final-score {
+    width: 90svw;
+    height: 90svh;
+    background: linear-gradient(135deg, #ff4b33, #eb781a, #ff4b33);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.score {
+    font-family: "Luckiest Guy", cursive;
+    font-size: clamp(4rem, 10vw, 20rem);
+    text-shadow: 2px 2px 8px #000;
+    color: #FFF700;
+}
+
+.score span {
+    display: inline-block;
+    animation: bounce 1.5s infinite ease-in-out;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
     }
 }

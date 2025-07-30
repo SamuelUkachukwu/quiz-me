@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="quiz me app for kids with fun trivia">
+    <meta name="keywords" content="quiz, kids game, learning app, ">
+    <meta name="author" content="Samuel Ukachukwu">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Quiz Me Play</title>
+</head>
+
+<body>
+    <div class="layout">
+        <nav>
+            <a href="/"><img class="nav-logo" src="../assets/images_new/logo.webp" alt="site home page"></a>
+            <div class="score-display">Score: <span id="score-display">0</span>/<span id="total-question">0</span></div>
+        </nav>
+        <main class="main-container">
+
+            <div class="difficulty-bar">
+                <input type="radio" id="beginner" name="difficulty" value="beginner" />
+                <label for="beginner">Beginner</label>
+
+                <input type="radio" id="intermediate" name="difficulty" value="intermediate" />
+                <label for="intermediate">Intermediate</label>
+
+                <input type="radio" id="advanced" name="difficulty" value="advanced" />
+                <label for="advanced">Advanced</label>
+            </div>
+
+            <!-- modal -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span id="close-modal" class="close-btn">&times;</span>
+                    <div class="modal-container-top">
+                        <h2 id="modal-question"></h2>
+                    </div>
+                    <form id="game-form">
+                        <ul id="modal-options">
+
+                        </ul>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <section class="content-section">
+                <!-- blocks -->
+            </section>
+            <div class="reset-bar">
+                <span class="reset" onclick="resetQuiz()">reset</span>
+            </div>
+        </main>
+
+        <footer class="footer" style="color: #fff; padding-top: 0;">
+            <ul class="menu">
+                <li><span id="toggle-mode"></span></li>
+                <li><a href="https://twitter.com/?lang=en" target="_blank" rel="noopener"
+                        aria-label="visit our twitter page (opens in a new tab)"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                        aria-label="visit our instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                        aria-label="visit our facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
+                </li>
+            </ul>
+            <div> <span class="fs-6">copyright &#169; <span class="logo">Quiz Me!</span>
+                    &reg;
+                    <span id="copy-right"></span>
+                </span></div>
+        </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/0e95d75add.js" crossorigin="anonymous"></script>
+    <script type="module" src="../assets/js/game.js"></script>
+    <script type="module" src="../assets/js/script2.js"></script>
+    <script>
+        document.getElementById("copy-right").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="quiz me app for kids with fun trivia ballinasloe ireland">
+    <meta name="description" content="quiz me app for kids with fun trivia">
     <meta name="keywords" content="quiz, kids game, learning app, ">
     <meta name="author" content="Samuel Ukachukwu">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -13,40 +13,46 @@
 </head>
 
 <body>
-    <header id="header">
-        <div id="logo-box">
-            <a href="index.html">
-                <img id="logo" src="assets/images/logo.png" alt="">
-            </a>
-        </div>
-        <div id="hero-title">
-            <a href="index.html">
-                <h1 id="title">Quiz Me!</h1>
-            </a>
-        </div>
-    </header>
-    <div class="main-container">
-        <div class="button-container">
-            <a href="play.html">
-                <h2 id="playbtn" class="fancy-btn font-one playquiz">PLAY</h2>
-            </a>
-        </div>
+    <div class="layout">
+        <nav>
+            <a href="/"><img class="nav-logo" src="assets/images_new/logo.webp" alt=""></a>
+            <ul class="menu">
+                <li><a href="https://twitter.com/?lang=en" target="_blank" rel="noopener"
+                        aria-label="visit our twitter page (opens in a new tab)"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                        aria-label="visit our instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                        aria-label="visit our facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li style="padding: 0 1rem;"><span id="toggle-mode"></span></li>
+            </ul>
+        </nav>
+        <main class="hero">
+            <div class="hero_content">
+                <h1 class="hero_title">Quiz Me!</h1>
+                <a href="play/" class="hero_cta">Start Playing</a>
+                <div class="trivia_content">
+                    <h4 class="trivia_title">Do You Know:</h4>
+                    <p id="trivia" class="trivia">Random Entertaining Trivia</p>
+                </div>
+            </div>
+        </main>
+        <footer class="home-footer">
+            <div> <span class="fs-6">copyright &#169; <span class="logo">Quiz Me!</span>
+                    &reg;
+                    <span id="copy-right"></span>
+                </span></div>
+        </footer>
+
+        <script src="https://kit.fontawesome.com/0e95d75add.js" crossorigin="anonymous"></script>
+        <script type="module" src="assets/js/script.js"></script>
+        <script src="assets/js/script2.js"></script>
+        <script>
+            document.getElementById("copy-right").innerHTML = new Date().getFullYear();
+        </script>
     </div>
-    <footer>
-        <ul class="social-menu">
-            <li><a href="https://twitter.com/?lang=en" target="_blank" rel="noopener"
-                    aria-label="visit our twitter page (opens in a new tab)"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"
-                    aria-label="visit our instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
-                    aria-label="visit our facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
-                    aria-label="visit our youtube page (opens in a new tab)"><i class="fab fa-youtube"></i></a>
-        </ul>
-    </footer>
-    <script src="https://kit.fontawesome.com/0e95d75add.js" crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

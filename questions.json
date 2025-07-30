@@ -1,0 +1,1941 @@
+ [
+    {
+        "question": "What is the capital of Japan?",
+        "answer": "Tokyo",
+        "options": [
+            "Bangkok",
+            "Tokyo",
+            "Seoul",
+            "Beijing"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What do bees produce?",
+        "answer": "Honey",
+        "options": [
+            "Water",
+            "Juice",
+            "Honey",
+            "Milk"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "What is the capital of Kazakhstan?",
+        "answer": "Astana",
+        "options": [
+            "Tashkent",
+            "Ashgabat",
+            "Bishkek",
+            "Astana"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the square root of 256?",
+        "answer": "16",
+        "options": [
+            "15",
+            "18",
+            "16",
+            "14"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "question": "Who developed the general theory of relativity?",
+        "answer": "Albert Einstein",
+        "options": [
+            "Isaac Newton",
+            "Galileo Galilei",
+            "Albert Einstein",
+            "Niels Bohr"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "question": "What gas do plants absorb?",
+        "answer": "Carbon Dioxide",
+        "options": [
+            "Hydrogen",
+            "Nitrogen",
+            "Oxygen",
+            "Carbon Dioxide"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What is H2O commonly known as?",
+        "answer": "Water",
+        "options": [
+            "Hydrogen",
+            "Acid",
+            "Salt",
+            "Water"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What year did the Berlin Wall fall?",
+        "answer": "1989",
+        "options": [
+            "1987",
+            "1989",
+            "1991",
+            "1985"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which element has the chemical symbol 'O'?",
+        "answer": "Oxygen",
+        "options": [
+            "Oxygen",
+            "Iron",
+            "Gold",
+            "Osmium"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Which planet is known for its rings?",
+        "answer": "Saturn",
+        "options": [
+            "Earth",
+            "Mars",
+            "Saturn",
+            "Jupiter"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What is 2 + 2?",
+        "answer": "4",
+        "options": [
+            "3",
+            "6",
+            "4",
+            "5"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "Which animal barks?",
+        "answer": "Dog",
+        "options": [
+            "Cow",
+            "Sheep",
+            "Dog",
+            "Cat"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "What color is the sky on a clear day?",
+        "answer": "Blue",
+        "options": [
+            "Red",
+            "Yellow",
+            "Green",
+            "Blue"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "Who painted the Sistine Chapel ceiling?",
+        "answer": "Michelangelo",
+        "options": [
+            "Michelangelo",
+            "Donatello",
+            "Raphael",
+            "Leonardo"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "question": "What gas do plants absorb from the atmosphere for photosynthesis?",
+        "answer": "Carbon Dioxide",
+        "options": [
+            "Oxygen",
+            "Carbon Dioxide",
+            "Nitrogen",
+            "Helium"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "What is the capital city of Canada?",
+        "answer": "Ottawa",
+        "options": [
+            "Toronto",
+            "Ottawa",
+            "Vancouver",
+            "Montreal"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Who developed the theory of evolution by natural selection?",
+        "answer": "Charles Darwin",
+        "options": [
+            "Isaac Newton",
+            "Gregor Mendel",
+            "Charles Darwin",
+            "Louis Pasteur"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What is the value of Pi up to two decimal places?",
+        "answer": "3.14",
+        "options": [
+            "3.12",
+            "3.14",
+            "3.15",
+            "3.13"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "Which ancient civilization built the pyramids?",
+        "answer": "Egyptians",
+        "options": [
+            "Romans",
+            "Greeks",
+            "Aztecs",
+            "Egyptians"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "What is the hardest natural substance on Earth?",
+        "answer": "Diamond",
+        "options": [
+            "Steel",
+            "Quartz",
+            "Diamond",
+            "Granite"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What is the square root of 625?",
+        "answer": "25",
+        "options": [
+            "20",
+            "25",
+            "30",
+            "15"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Who painted the ceiling of the Sistine Chapel?",
+        "answer": "Michelangelo",
+        "options": [
+            "Leonardo da Vinci",
+            "Raphael",
+            "Michelangelo",
+            "Donatello"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Which country is both in Europe and Asia?",
+        "answer": "Turkey",
+        "options": [
+            "Russia",
+            "Turkey",
+            "Kazakhstan",
+            "Georgia"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "Which ocean is the deepest in the world?",
+        "answer": "Pacific Ocean",
+        "options": [
+            "Indian Ocean",
+            "Atlantic Ocean",
+            "Pacific Ocean",
+            "Arctic Ocean"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What is H2O more commonly known as?",
+        "answer": "Water",
+        "options": [
+            "Oxygen",
+            "Hydrogen",
+            "Salt",
+            "Water"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "What is the chemical symbol for sodium?",
+        "answer": "Na",
+        "options": [
+            "So",
+            "Sn",
+            "Na",
+            "S"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Who is the author of '1984'?",
+        "answer": "George Orwell",
+        "options": [
+            "Aldous Huxley",
+            "George Orwell",
+            "Ray Bradbury",
+            "Ernest Hemingway"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "In which year did the Berlin Wall fall?",
+        "answer": "1989",
+        "options": [
+            "1991",
+            "1989",
+            "1987",
+            "1990"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "Which element has the atomic number 1?",
+        "answer": "Hydrogen",
+        "options": [
+            "Oxygen",
+            "Hydrogen",
+            "Helium",
+            "Carbon"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "What is the capital of South Korea?",
+        "answer": "Seoul",
+        "options": [
+            "Tokyo",
+            "Seoul",
+            "Beijing",
+            "Bangkok"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "answer": "Mitochondria",
+        "options": [
+            "Nucleus",
+            "Ribosome",
+            "Mitochondria",
+            "Chloroplast"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Which country gifted the Statue of Liberty to the United States?",
+        "answer": "France",
+        "options": [
+            "France",
+            "United Kingdom",
+            "Germany",
+            "Spain"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What is the freezing point of water in Celsius?",
+        "answer": "0",
+        "options": [
+            "32",
+            "0",
+            "-10",
+            "100"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "What is the term for a word that is the same forwards and backwards?",
+        "answer": "Palindrome",
+        "options": [
+            "Oxymoron",
+            "Anagram",
+            "Homonym",
+            "Palindrome"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "Who discovered penicillin?",
+        "answer": "Alexander Fleming",
+        "options": [
+            "Louis Pasteur",
+            "Marie Curie",
+            "Isaac Newton",
+            "Alexander Fleming"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "Which fruit is red and often used in pies?",
+        "answer": "Apple",
+        "options": [
+            "Grape",
+            "Apple",
+            "Banana",
+            "Pear"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "Which object tells time?",
+        "answer": "Clock",
+        "options": [
+            "Clock",
+            "Book",
+            "Table",
+            "Chair"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "What is the hardest natural substance?",
+        "answer": "Diamond",
+        "options": [
+            "Iron",
+            "Quartz",
+            "Diamond",
+            "Gold"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What is the integral of 1/x dx?",
+        "answer": "ln|x| + C",
+        "options": [
+            "1/x + C",
+            "ln|x| + C",
+            "e^x + C",
+            "x + C"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "Who wrote 'The Republic'?",
+        "answer": "Plato",
+        "options": [
+            "Aristotle",
+            "Socrates",
+            "Descartes",
+            "Plato"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "What season comes after summer?",
+        "answer": "Autumn",
+        "options": [
+            "Autumn",
+            "Summer",
+            "Spring",
+            "Winter"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "Who wrote 'Romeo and Juliet'?",
+        "answer": "William Shakespeare",
+        "options": [
+            "William Shakespeare",
+            "Charles Dickens",
+            "Jane Austen",
+            "Mark Twain"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What is the currency of Japan?",
+        "answer": "Yen",
+        "options": [
+            "Yen",
+            "Won",
+            "Dollar",
+            "Yuan"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What is Schrodinger's cat thought experiment about?",
+        "answer": "Quantum superposition",
+        "options": [
+            "Relativity",
+            "Time travel",
+            "Teleportation",
+            "Quantum superposition"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "Which animal has a long trunk?",
+        "answer": "Elephant",
+        "options": [
+            "Giraffe",
+            "Hippo",
+            "Elephant",
+            "Zebra"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "How many days are in a week?",
+        "answer": "7",
+        "options": [
+            "8",
+            "7",
+            "5",
+            "6"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "What is the capital of Bhutan?",
+        "answer": "Thimphu",
+        "options": [
+            "Dhaka",
+            "Kathmandu",
+            "Thimphu",
+            "Colombo"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "How many continents are there?",
+        "answer": "7",
+        "options": [
+            "5",
+            "6",
+            "8",
+            "7"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "In which year did the Titanic sink?",
+        "answer": "1912",
+        "options": [
+            "1912",
+            "1905",
+            "1920",
+            "1910"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "Which metal has the highest conductivity?",
+        "answer": "Silver",
+        "options": [
+            "Copper",
+            "Gold",
+            "Silver",
+            "Aluminum"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "What is the name of the first artificial satellite?",
+        "answer": "Sputnik",
+        "options": [
+            "Luna",
+            "Apollo",
+            "Sputnik",
+            "Voyager"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "Which planet is closest to the Sun?",
+        "answer": "Mercury",
+        "options": [
+            "Mars",
+            "Earth",
+            "Venus",
+            "Mercury"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What do we drink when thirsty?",
+        "answer": "Water",
+        "options": [
+            "Milk",
+            "Juice",
+            "Soda",
+            "Water"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "What is the derivative of sin(x)?",
+        "answer": "cos(x)",
+        "options": [
+            "-cos(x)",
+            "sin(x)",
+            "cos(x)",
+            "-sin(x)"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "What is the capital of the United States?",
+        "answer": "Washington, D.C.",
+        "options": [
+            "Los Angeles",
+            "Chicago",
+            "New York",
+            "Washington, D.C."
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "What color is the sun?",
+        "answer": "Yellow",
+        "options": [
+            "Blue",
+            "Yellow",
+            "Red",
+            "Green"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "What gas do humans need to breathe?",
+        "answer": "Oxygen",
+        "options": [
+            "Oxygen",
+            "Nitrogen",
+            "Hydrogen",
+            "Carbon Dioxide"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Which blood type is universal donor?",
+        "answer": "O negative",
+        "options": [
+            "O negative",
+            "A",
+            "O positive",
+            "B"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "How many hours are in a day?",
+        "answer": "24",
+        "options": [
+            "12",
+            "60",
+            "24",
+            "48"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "What is the boiling point of water in Celsius?",
+        "answer": "100",
+        "options": [
+            "95",
+            "105",
+            "100",
+            "90"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Which ocean is the largest?",
+        "answer": "Pacific",
+        "options": [
+            "Arctic",
+            "Atlantic",
+            "Indian",
+            "Pacific"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Who painted the Mona Lisa?",
+        "answer": "Leonardo da Vinci",
+        "options": [
+            "Van Gogh",
+            "Picasso",
+            "Michelangelo",
+            "Leonardo da Vinci"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Which instrument has keys, pedals, and strings?",
+        "answer": "Piano",
+        "options": [
+            "Guitar",
+            "Violin",
+            "Drum",
+            "Piano"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What do you use to write on a blackboard?",
+        "answer": "Chalk",
+        "options": [
+            "Marker",
+            "Chalk",
+            "Pencil",
+            "Pen"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "Which planet do we live on?",
+        "answer": "Earth",
+        "options": [
+            "Earth",
+            "Mars",
+            "Jupiter",
+            "Venus"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "Which planet is known as the Red Planet?",
+        "answer": "Mars",
+        "options": [
+            "Venus",
+            "Jupiter",
+            "Earth",
+            "Mars"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Which year did World War II end?",
+        "answer": "1945",
+        "options": [
+            "1946",
+            "1945",
+            "1944",
+            "1947"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "What language is primarily spoken in Brazil?",
+        "answer": "Portuguese",
+        "options": [
+            "English",
+            "Portuguese",
+            "French",
+            "Spanish"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "How many wheels does a bicycle have?",
+        "answer": "2",
+        "options": [
+            "3",
+            "4",
+            "1",
+            "2"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "What is the capital of Mongolia?",
+        "answer": "Ulaanbaatar",
+        "options": [
+            "Astana",
+            "Bishkek",
+            "Ulaanbaatar",
+            "Tashkent"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "What is the largest planet in our solar system?",
+        "answer": "Jupiter",
+        "options": [
+            "Earth",
+            "Mars",
+            "Jupiter",
+            "Venus"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "Which gas is most abundant in the Earth's atmosphere?",
+        "answer": "Nitrogen",
+        "options": [
+            "Oxygen",
+            "Hydrogen",
+            "Carbon Dioxide",
+            "Nitrogen"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Who developed the theory of general relativity?",
+        "answer": "Albert Einstein",
+        "options": [
+            "Isaac Newton",
+            "Nikola Tesla",
+            "Galileo Galilei",
+            "Albert Einstein"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Which element has the chemical symbol 'Au'?",
+        "answer": "Gold",
+        "options": [
+            "Silver",
+            "Gold",
+            "Copper",
+            "Aluminum"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "What is the smallest prime number greater than 100?",
+        "answer": "101",
+        "options": [
+            "103",
+            "97",
+            "101",
+            "107"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "Which country has the longest coastline in the world?",
+        "answer": "Canada",
+        "options": [
+            "Russia",
+            "Australia",
+            "Canada",
+            "USA"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "How many legs does a spider have?",
+        "answer": "8",
+        "options": [
+            "6",
+            "8",
+            "10",
+            "12"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "Which artist painted the ceiling of the Sistine Chapel?",
+        "answer": "Michelangelo",
+        "options": [
+            "Leonardo da Vinci",
+            "Michelangelo",
+            "Raphael",
+            "Donatello"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What is the rarest blood type in humans?",
+        "answer": "AB negative",
+        "options": [
+            "O positive",
+            "AB positive",
+            "A negative",
+            "AB negative"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "What is the opposite of 'up'?",
+        "answer": "Down",
+        "options": [
+            "Left",
+            "Forward",
+            "Down",
+            "Right"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "How many legs does a cat have?",
+        "answer": "4",
+        "options": [
+            "5",
+            "4",
+            "3",
+            "2"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "What planet is known as the Red Planet?",
+        "answer": "Mars",
+        "options": [
+            "Jupiter",
+            "Venus",
+            "Earth",
+            "Mars"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Which ocean lies on the east coast of the United States?",
+        "answer": "Atlantic",
+        "options": [
+            "Indian",
+            "Atlantic",
+            "Pacific",
+            "Arctic"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "In what year did the Berlin Wall fall?",
+        "answer": "1989",
+        "options": [
+            "1991",
+            "1989",
+            "1987",
+            "1990"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "What is the capital of France?",
+        "answer": "Paris",
+        "options": [
+            "London",
+            "Rome",
+            "Paris",
+            "Berlin"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What gas do plants absorb from the atmosphere?",
+        "answer": "Carbon Dioxide",
+        "options": [
+            "Nitrogen",
+            "Hydrogen",
+            "Oxygen",
+            "Carbon Dioxide"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What do bees make?",
+        "answer": "Honey",
+        "options": [
+            "Milk",
+            "Water",
+            "Honey",
+            "Juice"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "Which element has the atomic number 79?",
+        "answer": "Gold",
+        "options": [
+            "Gold",
+            "Platinum",
+            "Silver",
+            "Copper"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "In topic number, what is the key concept?",
+        "answer": "Concept 15",
+        "options": [
+            "Model 18",
+            "Theory 17",
+            "Idea 16",
+            "Concept 15"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "What shape has 3 sides?",
+        "answer": "Triangle",
+        "options": [
+            "Circle",
+            "Square",
+            "Rectangle",
+            "Triangle"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "Which empire built the Colosseum?",
+        "answer": "Roman Empire",
+        "options": [
+            "Roman Empire",
+            "Ottoman Empire",
+            "Greek Empire",
+            "Byzantine Empire"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "What is the square root of 144?",
+        "answer": "12",
+        "options": [
+            "13",
+            "12",
+            "14",
+            "11"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What do plants need for photosynthesis?",
+        "answer": "Sunlight",
+        "options": [
+            "Rain",
+            "Starlight",
+            "Moonlight",
+            "Sunlight"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "What is the integral of cos(x)?",
+        "answer": "sin(x) + C",
+        "options": [
+            "-cos(x) + C",
+            "tan(x) + C",
+            "x*sin(x) + C",
+            "sin(x) + C"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "What is the derivative of x^2?",
+        "answer": "2x",
+        "options": [
+            "x^2",
+            "1",
+            "2x",
+            "x"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "Which desert is the largest in the world?",
+        "answer": "Sahara",
+        "options": [
+            "Sahara",
+            "Mojave",
+            "Gobi",
+            "Kalahari"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "What part of the brain controls heartbeat and breathing?",
+        "answer": "Medulla",
+        "options": [
+            "Thalamus",
+            "Cerebrum",
+            "Cerebellum",
+            "Medulla"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "What is 15% of 200?",
+        "answer": "30",
+        "options": [
+            "30",
+            "40",
+            "35",
+            "25"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Which continent is Egypt in?",
+        "answer": "Africa",
+        "options": [
+            "South America",
+            "Africa",
+            "Asia",
+            "Europe"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "In which year did World War II end?",
+        "answer": "1945",
+        "options": [
+            "1945",
+            "1950",
+            "1940",
+            "1943"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Which country has the largest population?",
+        "answer": "China",
+        "options": [
+            "China",
+            "Russia",
+            "India",
+            "USA"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Who was the British Prime Minister during WWII?",
+        "answer": "Winston Churchill",
+        "options": [
+            "Winston Churchill",
+            "Clement Attlee",
+            "Tony Blair",
+            "Neville Chamberlain"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "What is 5 + 3?",
+        "answer": "8",
+        "options": [
+            "6",
+            "8",
+            "7",
+            "9"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "Who was the first president of the United States?",
+        "answer": "George Washington",
+        "options": [
+            "George Washington",
+            "Abraham Lincoln",
+            "John Adams",
+            "Thomas Jefferson"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "What is the study of fungi called?",
+        "answer": "Mycology",
+        "options": [
+            "Ecology",
+            "Zoology",
+            "Botany",
+            "Mycology"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "What force keeps us on the ground?",
+        "answer": "Gravity",
+        "options": [
+            "Friction",
+            "Magnetism",
+            "Gravity",
+            "Tension"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What gas do humans breathe in?",
+        "answer": "Oxygen",
+        "options": [
+            "Helium",
+            "Nitrogen",
+            "Carbon Dioxide",
+            "Oxygen"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "What color are bananas when ripe?",
+        "answer": "Yellow",
+        "options": [
+            "Red",
+            "Brown",
+            "Green",
+            "Yellow"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "What part of the cell contains DNA?",
+        "answer": "Nucleus",
+        "options": [
+            "Cytoplasm",
+            "Cell wall",
+            "Mitochondria",
+            "Nucleus"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Which philosopher wrote 'Critique of Pure Reason'?",
+        "answer": "Immanuel Kant",
+        "options": [
+            "Hume",
+            "Socrates",
+            "Kant",
+            "Descartes"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "What is the capital of New Zealand?",
+        "answer": "Wellington",
+        "options": [
+            "Auckland",
+            "Christchurch",
+            "Hamilton",
+            "Wellington"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "Which animal says 'meow'?",
+        "answer": "Cat",
+        "options": [
+            "Cat",
+            "Cow",
+            "Sheep",
+            "Dog"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "Who discovered America in 1492?",
+        "answer": "Christopher Columbus",
+        "options": [
+            "Magellan",
+            "Marco Polo",
+            "Vasco da Gama",
+            "Christopher Columbus"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Which language is spoken in Brazil?",
+        "answer": "Portuguese",
+        "options": [
+            "Spanish",
+            "French",
+            "Portuguese",
+            "English"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What is the chemical symbol for Gold?",
+        "answer": "Au",
+        "options": [
+            "Pb",
+            "Ag",
+            "Fe",
+            "Au"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "What is the longest river in the world?",
+        "answer": "Nile",
+        "options": [
+            "Mississippi",
+            "Nile",
+            "Yangtze",
+            "Amazon"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Which sport uses a bat and ball?",
+        "answer": "Baseball",
+        "options": [
+            "Soccer",
+            "Basketball",
+            "Tennis",
+            "Baseball"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What planet do we live on?",
+        "answer": "Earth",
+        "options": [
+            "Mars",
+            "Jupiter",
+            "Earth",
+            "Venus"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "What organ pumps blood throughout the body?",
+        "answer": "Heart",
+        "options": [
+            "Heart",
+            "Liver",
+            "Kidney",
+            "Lungs"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "In which year did the United States declare independence?",
+        "answer": "1776",
+        "options": [
+            "1789",
+            "1776",
+            "1804",
+            "1750"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What is the most abundant gas in Earth's atmosphere?",
+        "answer": "Nitrogen",
+        "options": [
+            "Oxygen",
+            "Hydrogen",
+            "Carbon Dioxide",
+            "Nitrogen"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Who is the author of 'Pride and Prejudice'?",
+        "answer": "Jane Austen",
+        "options": [
+            "Emily Brontë",
+            "Jane Austen",
+            "Charles Dickens",
+            "Mary Shelley"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Which element has the atomic number 6?",
+        "answer": "Carbon",
+        "options": [
+            "Oxygen",
+            "Carbon",
+            "Nitrogen",
+            "Helium"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Which country is home to the kangaroo?",
+        "answer": "Australia",
+        "options": [
+            "India",
+            "Brazil",
+            "Australia",
+            "South Africa"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "What is the capital of Argentina?",
+        "answer": "Buenos Aires",
+        "options": [
+            "Buenos Aires",
+            "Santiago",
+            "Lima",
+            "Montevideo"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Who painted 'The Starry Night'?",
+        "answer": "Vincent van Gogh",
+        "options": [
+            "Pablo Picasso",
+            "Leonardo da Vinci",
+            "Vincent van Gogh",
+            "Claude Monet"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What is the largest organ in the human body?",
+        "answer": "Skin",
+        "options": [
+            "Liver",
+            "Skin",
+            "Heart",
+            "Lung"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Which continent has the most countries?",
+        "answer": "Africa",
+        "options": [
+            "Asia",
+            "Europe",
+            "Africa",
+            "South America"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What is the chemical symbol for potassium?",
+        "answer": "K",
+        "options": [
+            "K",
+            "P",
+            "Pt",
+            "Po"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What is the longest bone in the human body?",
+        "answer": "Femur",
+        "options": [
+            "Femur",
+            "Tibia",
+            "Humerus",
+            "Radius"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "Which mathematician is known as the 'father of geometry'?",
+        "answer": "Euclid",
+        "options": [
+            "Archimedes",
+            "Euclid",
+            "Pythagoras",
+            "Newton"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "Which ocean surrounds the Maldives?",
+        "answer": "Indian Ocean",
+        "options": [
+            "Pacific Ocean",
+            "Atlantic Ocean",
+            "Indian Ocean",
+            "Arctic Ocean"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Which famous structure was built by Shah Jahan in memory of his wife?",
+        "answer": "Taj Mahal",
+        "options": [
+            "Red Fort",
+            "Lotus Temple",
+            "Qutub Minar",
+            "Taj Mahal"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "Who proposed the laws of planetary motion?",
+        "answer": "Johannes Kepler",
+        "options": [
+            "Isaac Newton",
+            "Galileo Galilei",
+            "Johannes Kepler",
+            "Copernicus"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "Which part of the plant conducts photosynthesis?",
+        "answer": "Leaf",
+        "options": [
+            "Root",
+            "Stem",
+            "Flower",
+            "Leaf"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "In computing, what does CPU stand for?",
+        "answer": "Central Processing Unit",
+        "options": [
+            "Central Processing Unit",
+            "Control Power Unit",
+            "Computer Processing Unit",
+            "Central Peripheral Unit"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "Which war was fought between the north and south regions in the United States?",
+        "answer": "The Civil War",
+        "options": [
+            "World War I",
+            "Revolutionary War",
+            "The Civil War",
+            "Vietnam War"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "answer": "Newton",
+        "options": [
+            "Pascal",
+            "Joule",
+            "Newton",
+            "Watt"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Which is the largest internal organ in the human body?",
+        "answer": "Liver",
+        "options": [
+            "Liver",
+            "Heart",
+            "Brain",
+            "Lung"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What year did World War I begin?",
+        "answer": "1914",
+        "options": [
+            "1912",
+            "1914",
+            "1916",
+            "1918"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "Which famous scientist introduced the three laws of motion?",
+        "answer": "Isaac Newton",
+        "options": [
+            "Albert Einstein",
+            "Galileo Galilei",
+            "Isaac Newton",
+            "Nikola Tesla"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "Which blood type is known as the universal donor?",
+        "answer": "O negative",
+        "options": [
+            "A positive",
+            "O negative",
+            "B negative",
+            "AB positive"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "Who was the first person to walk on the moon?",
+        "answer": "Neil Armstrong",
+        "options": [
+            "Buzz Aldrin",
+            "Yuri Gagarin",
+            "Neil Armstrong",
+            "John Glenn"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "Which metal is liquid at room temperature?",
+        "answer": "Mercury",
+        "options": [
+            "Mercury",
+            "Iron",
+            "Aluminum",
+            "Lead"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What is the smallest unit of life?",
+        "answer": "Cell",
+        "options": [
+            "Tissue",
+            "Cell",
+            "Atom",
+            "Organ"
+        ],
+        "difficulty": "easy",
+        "color": "green"
+    },
+    {
+        "question": "What do you call a triangle with all sides of different lengths?",
+        "answer": "Scalene",
+        "options": [
+            "Isosceles",
+            "Equilateral",
+            "Scalene",
+            "Right"
+        ],
+        "difficulty": "medium",
+        "color": "yellow"
+    },
+    {
+        "question": "What is the Heisenberg Uncertainty Principle related to?",
+        "answer": "Measurement of particles",
+        "options": [
+            "Gravity",
+            "Measurement of particles",
+            "Energy conservation",
+            "Nuclear fusion"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "Which part of the brain is responsible for memory?",
+        "answer": "Hippocampus",
+        "options": [
+            "Amygdala",
+            "Cerebellum",
+            "Hippocampus",
+            "Medulla"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "Which ancient civilization built Machu Picchu?",
+        "answer": "Inca",
+        "options": [
+            "Maya",
+            "Aztec",
+            "Inca",
+            "Olmec"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "What is the term for animals that eat both plants and meat?",
+        "answer": "Omnivores",
+        "options": [
+            "Carnivores",
+            "Herbivores",
+            "Omnivores",
+            "Insectivores"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "Which physicist is known for the quantum model of the atom?",
+        "answer": "Niels Bohr",
+        "options": [
+            "Max Planck",
+            "Erwin Schrödinger",
+            "Niels Bohr",
+            "Rutherford"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "What is the main language spoken in Iran?",
+        "answer": "Persian",
+        "options": [
+            "Arabic",
+            "Turkish",
+            "Persian",
+            "Urdu"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "Who was the first emperor of the Roman Empire?",
+        "answer": "Augustus",
+        "options": [
+            "Julius Caesar",
+            "Nero",
+            "Augustus",
+            "Tiberius"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "What is the study of fossils called?",
+        "answer": "Paleontology",
+        "options": [
+            "Archaeology",
+            "Paleontology",
+            "Geology",
+            "Anthropology"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "Which gas is most commonly used in neon signs?",
+        "answer": "Neon",
+        "options": [
+            "Neon",
+            "Argon",
+            "Xenon",
+            "Krypton"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "Which organ produces insulin?",
+        "answer": "Pancreas",
+        "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Gallbladder"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "What type of bond involves sharing electron pairs?",
+        "answer": "Covalent bond",
+        "options": [
+            "Ionic bond",
+            "Hydrogen bond",
+            "Covalent bond",
+            "Metallic bond"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "Who wrote 'The Divine Comedy'?",
+        "answer": "Dante Alighieri",
+        "options": [
+            "Geoffrey Chaucer",
+            "Dante Alighieri",
+            "Homer",
+            "Virgil"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "Which blood cells help in clotting?",
+        "answer": "Platelets",
+        "options": [
+            "White cells",
+            "Red cells",
+            "Platelets",
+            "Plasma"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "Which is the deepest part of the world's oceans?",
+        "answer": "Mariana Trench",
+        "options": [
+            "Tonga Trench",
+            "Mariana Trench",
+            "Philippine Trench",
+            "Puerto Rico Trench"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "Which planet has the shortest day?",
+        "answer": "Jupiter",
+        "options": [
+            "Mars",
+            "Earth",
+            "Jupiter",
+            "Saturn"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    },
+    {
+        "question": "What is the boiling point of water at sea level in Celsius?",
+        "answer": "100",
+        "options": [
+            "90",
+            "100",
+            "110",
+            "120"
+        ],
+        "difficulty": "hard",
+        "color": "red"
+    }
+]
