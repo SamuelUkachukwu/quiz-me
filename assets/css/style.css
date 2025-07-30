@@ -521,7 +521,7 @@ footer {
 
 @media screen and (max-width: 350px) {
     .hero_title {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     .difficulty-bar label,
