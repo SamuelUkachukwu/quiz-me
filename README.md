@@ -15,19 +15,6 @@ users of the app are requested to create a user name and engage in answering 15 
 
 ## Features:
 
-<!-- **Navigation:**
-
-![screenshot of navigation page](assets/images/homepage-and-navigation.webp)
-
-
-1.	the site is designed to be as simple as possible as the target users age bracket would allow. images with links to refresh the page back to the home page serves as the navigation. 
-
-2.	the middle of the page is a single link assigned "play" this link when clicked takes the user to the game page
-
-3. The hero image is a static background image well suited for the dark theme of the site and allow users much sight friendly screen time.   
-4. Below the play button is the footer and offers site users a link to the social media pages and more exploration.
-links open in new browser tabs. -->
-
 ### 🎮 Game Mechanics
 
 - **Difficulty Levels**:

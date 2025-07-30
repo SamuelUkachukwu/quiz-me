@@ -68,7 +68,7 @@ body {
     position: absolute;
     inset: 0;
     background-color: var(--color-white);
-    background-image: url("../images_new/hero.webp");
+    background-image: url("../images/hero.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -76,7 +76,7 @@ body {
 }
 
 .dark .layout::after {
-    background-image: url("../images_new/hero_dark.webp");
+    background-image: url("../images/hero_dark.webp");
 }
 
 nav {
