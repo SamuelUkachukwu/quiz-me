@@ -10,7 +10,7 @@ The QUIZ ME is an application designed to give kids an educative moment of fun a
 users of the app are requested to create a user name and engage in answering 15 random questions receiving a score at the end of the session.
 
 
-![responsive design of the website from ami.responsive.com](assets/images/responsive-test.jpg)
+![responsive design of the website from ami.responsive.com](assets/images/responsive-test.webp)
 
 
 ## Features:
